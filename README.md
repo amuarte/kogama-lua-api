@@ -28,7 +28,7 @@ Same as [KogamaTools](https://github.com/Beckowl/KogamaTools):
 
 ### 🚀 **Easy Method (Installer)**
 1. Download [KogamaMod Installer](https://github.com/Beckowl/KogamaModInstaller/releases/latest)
-2. Download [KogamaTools+LuaAPI](https://github.com/amuarte/kogama-lua/releases/latest)
+2. Download [KogamaTools+LuaAPI](https://github.com/amuarte/kogama-lua-api/releases/latest)
 3. Open installer, browse to the downloaded ZIP
 4. Select server and install
 5. Join any game - GUI appears after loading
