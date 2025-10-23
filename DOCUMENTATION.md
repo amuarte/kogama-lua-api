@@ -1,109 +1,92 @@
 # API Documentation - Alpha 0.1
 
+Quick reference for KogamaTools Lua API
+
+---
+
 ## Table of Contents
 - [Getting Started](#getting-started)
-- [Cube Manipulation](#cube-manipulation)
-  - [Creating Cubes](#creating-cubes)
-  - [Removing Cubes](#removing-cubes)
-  - [Querying Cubes](#querying-cubes)
-- [Event Handlers](#event-handlers)
-- [Session Storage](#session-storage)
-- [File Loading](#file-loading)
+- [Cubes](#cubes)
 - [Objects](#objects)
-  - [Creating Objects](#creating-objects)
-  - [Text Object Properties](#text-object-properties)
-  - [Linking Objects](#linking-objects)
+- [Event Handlers](#event-handlers)
+- [File System](#file-system)
+- [Session Storage](#session-storage)
 - [Known Issues](#known-issues)
 
 ---
 
 ## Getting Started
 
-To load a script in-game, use: `/loadscript <script_path>`
+**Load a script:**
+```
+/loadscript <script_path>
+```
 
+**Auto-load:**  
 Files named `init.lua` are automatically loaded on startup.
 
-## Cube Manipulation
+---
 
-### Creating Cubes
+## Cubes
 
-`new_cube(id)` - Creates a new cube. Omit the `id` parameter to add the cube to the currently edited model.
+### `new_cube([id])`
 
-**Properties:**
-- `position` - Cube position as `{x, y, z}`
-- `materials` - Array (1-6) of material IDs for each face
-- `corners` - Array (1-8) of vertex positions, each as `{x, y, z}` where values range from 0-4
-```lua
-local c = new_cube()
-c.position = {1, 2, 3}
-c.materials[1] = 5
-c.corners[1] = {0, 4, 0}
-```
-
-### Removing Cubes
-
-`remove_cube({x, y, z})` - Removes a cube at the specified position.
-
-**Returns:**
-- `true` - Cube was removed
-- `false` - No cube found at position
-- `nil` - Error occurred
-
-### Querying Cubes
-
-`get_cubes(id)` - Returns all cubes from a model. Omit `id` to get cubes from the currently edited model. Returns list of cube tables with their properties.
-
-`get_cube({x, y, z})` - Returns a cube at the specified position. Returns cube properties table or `nil` if not found or error.
-
-## Event Handlers
-
-### Cube Removal Event
-```lua
-on_cube_removed(function(cube)
-    print("Cube was removed")
-end)
-```
-
-## Session Storage
-
-Temporary in-game session storage:
-```lua
-session.testscript.value = 5
-```
-
-**⚠️ IMPORTANT:** Use a unique name as your first key to avoid conflicts!
-
-## File Loading
-
-### Loading Scripts
-
-`require("modfolder/script1")` - Loads a script. Path is absolute from the scripts folder.
-
-### Reading Text Files
-
-`read_file("text.txt")` - Loads a file from the scripts directory, returns content as string.
-
-### Reading Images
-
-`read_image("image.png")` - Loads an image file from the scripts directory. Supports: `.png`, `.jpg`, `.jpeg`, `.bmp`, `.gif`
+Creates a new cube. Omit `id` to add to currently edited model.
 
 **Properties:**
-- `width` - Image width
-- `height` - Image height
-- `pixels[y][x]` - Pixel data with `.r`, `.g`, `.b`, `.a` components (values: 0-255)
+- `position` - `{x, y, z}` 
+- `materials[1-6]` - Material ID for each face
+- `corners[1-8]` - Vertex positions `{x, y, z}`, values 0-4
+
+**Example:**
 ```lua
-local img = read_image("image.png")
-print(img.width, img.height)
-print(img.pixels[1][1].r, img.pixels[1][1].g, img.pixels[1][1].b, img.pixels[1][1].a)
+local cube = new_cube()
+cube.position = {1, 2, 3}
+cube.materials[1] = 5
+cube.corners[1] = {0, 4, 0}
 ```
+
+### `remove_cube(position)`
+
+Removes cube at position.
+
+**Returns:** `true` (removed), `false` (not found), `nil` (error)
+
+**Example:**
+```lua
+local result = remove_cube({0, 0, 0})
+if result then
+    print("Removed!")
+end
+```
+
+### `get_cube(position)`
+
+Returns cube at position or `nil`.
+
+**Example:**
+```lua
+local cube = get_cube({1, 2, 3})
+if cube then
+    print(cube.materials[1])
+end
+```
+
+### `get_cubes([id])`
+
+Returns all cubes from model or `nil`. Omit `id` for current model.
+
+---
 
 ## Objects
 
-### Creating Objects
+### `new_object(type)`
 
-`new_object("type")` - Creates a new object of specified type.
+Creates game object. Returns object or `nil`.
 
-**⚠️ WARNING:** Position must be set during creation and cannot be changed afterward!
+⚠️ **Position must be set immediately and cannot be changed later!**
+
+**Example:**
 ```lua
 local obj = new_object("text")
 obj.position = {2.5, 100, -5.213}
@@ -111,10 +94,12 @@ obj.position = {2.5, 100, -5.213}
 
 ### Text Object Properties
 
-- `text` - Text content
-- `color` - RGB color as `{r, g, b}` (values: 0-1)
-- `size` - Text size
-- `billboard` - Boolean, if true the text always faces the camera
+- `text` - String content
+- `color` - `{r, g, b}` (values 0-1)
+- `size` - Number
+- `billboard` - Boolean
+
+**Example:**
 ```lua
 obj.text = "Hello world"
 obj.color = {0, 1.0, 0.5}
@@ -122,12 +107,91 @@ obj.size = 2.0
 obj.billboard = true
 ```
 
-### Linking Objects
+### `link(obj1, obj2)`
 
-`link(obj1, obj2)` - Links obj1 (output) to obj2 (input).
+Links obj1 output to obj2 input.
+
+---
+
+## Event Handlers
+
+### `on_cube_removed(callback)`
+
+Called when cube is removed.
+
+**Example:**
+```lua
+on_cube_removed(function(cube)
+    print("Cube removed")
+end)
+```
+
+---
+
+## File System
+
+### `require(path)`
+
+Loads script from `scripts/` folder. Use `/` for subdirectories.
+
+**Example:**
+```lua
+require("mymod/main")
+```
+
+### `read_file(filename)`
+
+Reads text file from `scripts/`. Returns string or `nil`.
+
+**Example:**
+```lua
+local file = read_file("config.txt")
+if file then
+    print(file)
+end
+```
+
+### `read_image(filename)`
+
+Loads image from `scripts/`. Supports: `.png`, `.jpg`, `.jpeg`, `.bmp`, `.gif`
+
+Returns image with `width`, `height`, `pixels[y][x]` or `nil`.  
+Pixel values: `.r`, `.g`, `.b`, `.a` (0-255)
+
+**Example:**
+```lua
+local img = read_image("texture.png")
+if img then
+    print(img.width, img.height)
+    print(img.pixels[1][1].r)
+end
+```
+
+---
+
+## Session Storage
+
+Temporary storage (resets on game close).
+
+**Important:** Use unique namespace to avoid conflicts!
+
+**Example:**
+```lua
+session.mymod.value = 5
+session.mymod.config = {enabled = true}
+
+-- Bad (may conflict):
+session.value = 5  -- ❌
+```
+
+---
 
 ## Known Issues
 
-- Setting object position after creation is not synchronized
-- Querying object properties may return incorrect information
-- Logs may be corrupted
+⚠️ Object position cannot be changed after creation  
+⚠️ Log formatting may show raw color tags  
+⚠️ Some object properties may return outdated data
+
+---
+
+[Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
