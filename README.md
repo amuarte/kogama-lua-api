@@ -75,5 +75,5 @@ Lua API by amuarte
 ## **Need Help?**
 
 - 📖 [Full Documentation](DOCUMENTATION.md)
-- 🐛 [Report Issues](https://github.com/amuarte/kogama-lua/issues)
+- 🐛 [Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
 - 💬 [KogamaTools Discord](https://discord.gg/aP2JYAzZg8)
