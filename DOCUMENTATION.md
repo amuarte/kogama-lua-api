@@ -1,4 +1,4 @@
-# API Documentation - Alpha 0.1
+# API Documentation
 
 Quick reference for KogamaTools Lua API
 
@@ -189,7 +189,6 @@ session.value = 5  -- ❌
 ## Known Issues
 
 ⚠️ Object position cannot be changed after creation  
-⚠️ Log formatting may show raw color tags  
 ⚠️ Some object properties may return outdated data
 
 ---
