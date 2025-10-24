@@ -1,18 +1,18 @@
-# KogamaTools + Lua API
+# KogamaLuaAPI
 
-Lua scripting mod for KoGaMa
+Standalone Lua scripting mod for KoGaMa
 
 ⚠️ **Early alpha - expect bugs and changes**
 
 ---
 
 # Contents
-1. [Introduction](#kogamatools--lua-api)
+1. [Introduction](#kogamaluaapi)
 2. [Features](#features)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
 5. [Quick Start](#quick-start)
-6. [Known Issues](#known-issues-v01)
+6. [Known Issues](#known-issues)
 7. [Used Libraries](#used-libraries)
 8. [Help](#need-help)
 
@@ -63,12 +63,12 @@ Lua scripting mod for KoGaMa
 ## 🚀 **Easy Method (Installer)**
 
 1. Download the latest release of the mod installer [here](https://github.com/Beckowl/KogamaModInstaller/releases/latest)
-2. Download the latest release of KogamaTools+LuaAPI [here](https://github.com/amuarte/kogama-lua-api/releases/latest)
+2. Download the latest release of KogamaLuaAPI [here](https://github.com/amuarte/kogama-lua-api/releases/latest)
 3. Open the installer and click the **"Browse"** button next to the `Mod Path` field
 4. Locate the downloaded ZIP file and select it. <mark>You do not need to extract the zip file.</mark>
 5. Select your game server and click **"Install"**
 6. Launch the game via the standalone client. <mark>The first launch may take 30 seconds to 2 minutes. Don't worry if it seems frozen.</mark>
-7. Join any game - the KogamaTools GUI with Lua support should appear after loading
+7. Join any game - the mod should load after the loading screen
 
 ---
 
@@ -96,14 +96,15 @@ Lua scripting mod for KoGaMa
    - A console window should appear - this means BepInEx installed successfully
    - Wait for the interop assemblies to generate, then close the game
 
-3. **Install KogamaTools + Lua API**  
+3. **Install KogamaLuaAPI**  
    - Download the latest release from [here](https://github.com/amuarte/kogama-lua-api/releases/latest)
    - Extract the ZIP contents into the `BepInEx/plugins/` folder
    - The folder structure should look like:
 ```
      BepInEx/plugins/
-     ├── KogamaTools.dll
+     ├── KogamaLuaAPI.dll
      ├── NLua.dll
+     ├── KeraLua.dll
      └── (other dependency files)
 ```
 
@@ -117,10 +118,9 @@ Lua scripting mod for KoGaMa
 
 5. **Start KoGaMa**  
    - Launch the game and join any project
-   - The KogamaTools overlay should appear after the loading screen
    - You can now load scripts with `/loadscript <filename>`
 
-⚠️ **Note:** This mod replaces the original KogamaTools. Do not install both at the same time.
+✅ **Works standalone or alongside KogamaTools!**
 
 ---
 
@@ -152,10 +152,9 @@ obj.billboard = true
 
 ---
 
-# **Known Issues v0.1**
+# **Known Issues**
 
 ⚠️ **Current Limitations:**
-- Console log formatting may display color tags incorrectly
 - Object position cannot be changed after creation
 - Some object property queries may return outdated data
 
@@ -165,18 +164,19 @@ These issues will be addressed in future updates.
 
 # **Used Libraries**
 
-- [BepInEx](https://github.com/BepInEx/BepInEx) - *Licensed under the [LGPL-2.1 license](https://opensource.org/licenses/LGPL-2.1)*
-- [ClickableTransparentOverlay](https://github.com/zaafar/ClickableTransparentOverlay) - *Licensed under the [Apache-2.0 License](https://opensource.org/licenses/Apache-2.0)*
-- [ImGui](https://github.com/ocornut/imgui) - *Licensed under the [MIT license](https://opensource.org/licenses/MIT)*
-- [NativeFileDialogSharp](https://github.com/milleniumbug/NativeFileDialogSharp) - *Licensed under the [Zlib license](https://opensource.org/licenses/Zlib)*
-- [ParsingHelper](https://github.com/SoftCircuits/ParsingHelper) - *Licensed under the [MIT license](https://opensource.org/licenses/MIT)*
-- [NLua](https://github.com/NLua/NLua) - *Licensed under the [MIT license](https://opensource.org/licenses/MIT)*
+- [BepInEx](https://github.com/BepInEx/BepInEx) - *LGPL-2.1 license*
+- [HarmonyX](https://github.com/BepInEx/HarmonyX) - *MIT license*
+- [Il2CppInterop](https://github.com/BepInEx/Il2CppInterop) - *LGPL-3.0 license*
+- [NLua](https://github.com/NLua/NLua) - *MIT license*
+- [KeraLua](https://github.com/NLua/KeraLua) - *MIT license*
+- [NativeFileDialogSharp](https://github.com/milleniumbug/NativeFileDialogSharp) - *Zlib license*
+- [ParsingHelper](https://github.com/SoftCircuits/ParsingHelper) - *MIT license*
 
 ---
 
 # **Credits**
 
-Based on [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl (Zlib license)  
+Includes code from [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl (Zlib license)  
 Lua scripting API by amuarte
 
 ---
@@ -185,4 +185,3 @@ Lua scripting API by amuarte
 
 - 📖 [Full API Documentation](DOCUMENTATION.md)
 - 🐛 [Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
-- 💬 [KogamaTools Discord](https://discord.gg/aP2JYAzZg8) for general support
