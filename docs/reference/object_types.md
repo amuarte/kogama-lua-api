@@ -77,16 +77,16 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/80/T_LightCube_Default_Icon.png" height="32"> | `light_cube` | `55` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/b/b4/T_EliminatetheOculus_Default_Icon.png" height="32"> | `eliminate_the_oculus` | `56` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1d/T_DeathMatch_Default_Icon.png" height="32"> | `deathmatch` | `57` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2f/Turist_wiht_Flag_time.png" height="32"> | `time_attack_flag` | `58` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/time_attack_flag.png" height="32"> | `time_attack_flag` | `58` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/50/T_Checkpoint_Default_Icon.png" height="32"> | `checkpoint` | `59` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/39/T_Flag_Default_Icon.png" height="32"> | `flag` | `60` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5b/Speaker.png.png.png" height="32"> | `speaker` | `61` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/92/Speaker.png.png" height="32"> | `global_speaker` | `62` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9f/T_WindTurbine_Default_Icon.png" height="32"> | `wind_turbine` | `63` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `red_team_spawn_point` | `64` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `yellow_team_spawn_point` | `65` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/red_team_spawn_point.png" height="32"> | `red_team_spawn_point` | `64` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/yellow_team_spawn_point.png" height="32"> | `yellow_team_spawn_point` | `65` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `blue_team_spawn_point` | `66` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `green_team_spawn_point` | `67` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/green_team_spawn_point.png" height="32"> | `green_team_spawn_point` | `67` |
 
 ## Advanced Logic
 
@@ -103,7 +103,7 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/18/T_Cube_Model_Hider_Old_Icon.png" height="32"> | `cube_model_hider` | `76` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/56/T_CubeModelTransparency_Default_Icon.png" height="32"> | `cube_model_transparency` | `77` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fb/T_RandomCube_Default_Icon.png" height="32"> | `random_cube` | `78` |
-| ⚠️ | `lever` | `79` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/lever.png" height="32"> | `lever` | `79` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_PressurePlate_Default_Icon.png" height="32"> | `pressure_plate` | `80` |
 
 ## Special
@@ -111,5 +111,5 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | Preview | Name | ID |
 |:-------:|:-----|:--:|
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" height="32"> | `model` | `81` |
-| ⚠️ | `group` | `82` |
+|  | `group` | `82` |
 
