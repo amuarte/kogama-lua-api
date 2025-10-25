@@ -1,6 +1,6 @@
 # API Documentation
 
-Quick reference for KogamaTools Lua API
+Quick reference for Kogama Lua API
 
 ---
 
