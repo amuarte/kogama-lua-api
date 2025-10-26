@@ -1,5 +1,4 @@
 # Getting Started
-
 Quick guide to start scripting with Kogama Lua API.
 
 ---
@@ -27,13 +26,12 @@ Name your script `init.lua` - it loads automatically on startup.
 ## Your First Script
 
 **Create `scripts/hello.lua`:**
+
 ```lua
 print("Hello Kogama!")
-
 local cube = new_cube()
 cube.position = {0, 0, 0}
-cube.materials[1] = 1
-
+cube.materials[1] = MATERIALS.BRIGHT_RED
 print("Created a cube!")
 ```
 
