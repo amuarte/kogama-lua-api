@@ -76,7 +76,7 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/3e/T_TNT_Default_Icon.png" height="32"> | `tnt` | `54` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/80/T_LightCube_Default_Icon.png" height="32"> | `light_cube` | `55` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/b/b4/T_EliminatetheOculus_Default_Icon.png" height="32"> | `eliminate_the_oculus` | `56` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1d/T_DeathMatch_Default_Icon.png" height="32"> | `deathmatch` | `57` |
+| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1d/T_DeathMatch_Default_Icon.png" height="32"> | `death_match` | `57` |
 | <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/time_attack_flag.png" height="32"> | `time_attack_flag` | `58` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/50/T_Checkpoint_Default_Icon.png" height="32"> | `checkpoint` | `59` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/39/T_Flag_Default_Icon.png" height="32"> | `flag` | `60` |
