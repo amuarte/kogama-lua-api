@@ -76,17 +76,17 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/3e/T_TNT_Default_Icon.png" height="32"> | `OBJECTS.TNT` | `54` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/80/T_LightCube_Default_Icon.png" height="32"> | `OBJECTS.LIGHT_CUBE` | `55` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/b/b4/T_EliminatetheOculus_Default_Icon.png" height="32"> | `OBJECTS.ELIMINATE_THE_OCULUS` | `56` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1d/T_DeathMatch_Default_Icon.png" height="32"> | `OBJECTS.DEATHMATCH` | `57` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2f/Turist_wiht_Flag_time.png" height="32"> | `OBJECTS.TIME_ATTACK_FLAG` | `58` |
+| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1d/T_DeathMatch_Default_Icon.png" height="32"> | `OBJECTS.DEATH_MATCH` | `57` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/time_attack_flag.png" height="32"> | `OBJECTS.TIME_ATTACK_FLAG` | `58` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/50/T_Checkpoint_Default_Icon.png" height="32"> | `OBJECTS.CHECKPOINT` | `59` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/39/T_Flag_Default_Icon.png" height="32"> | `OBJECTS.FLAG` | `60` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5b/Speaker.png.png.png" height="32"> | `OBJECTS.SPEAKER` | `61` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/92/Speaker.png.png" height="32"> | `OBJECTS.GLOBAL_SPEAKER` | `62` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9f/T_WindTurbine_Default_Icon.png" height="32"> | `OBJECTS.WIND_TURBINE` | `63` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `OBJECTS.RED_TEAM_SPAWN_POINT` | `64` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `OBJECTS.YELLOW_TEAM_SPAWN_POINT` | `65` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/red_team_spawn_point.png" height="32"> | `OBJECTS.RED_TEAM_SPAWN_POINT` | `64` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/yellow_team_spawn_point.png" height="32"> | `OBJECTS.YELLOW_TEAM_SPAWN_POINT` | `65` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `OBJECTS.BLUE_TEAM_SPAWN_POINT` | `66` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" height="32"> | `OBJECTS.GREEN_TEAM_SPAWN_POINT` | `67` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/green_team_spawn_point.png" height="32"> | `OBJECTS.GREEN_TEAM_SPAWN_POINT` | `67` |
 
 ## Advanced Logic
 
@@ -103,7 +103,7 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/18/T_Cube_Model_Hider_Old_Icon.png" height="32"> | `OBJECTS.CUBE_MODEL_HIDER` | `76` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/56/T_CubeModelTransparency_Default_Icon.png" height="32"> | `OBJECTS.CUBE_MODEL_TRANSPARENCY` | `77` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fb/T_RandomCube_Default_Icon.png" height="32"> | `OBJECTS.RANDOM_CUBE` | `78` |
-| ⚠️ | `OBJECTS.LEVER` | `79` |
+| <img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/lever.png" height="32"> | `OBJECTS.LEVER` | `79` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_PressurePlate_Default_Icon.png" height="32"> | `OBJECTS.PRESSURE_PLATE` | `80` |
 
 ## Special
@@ -111,5 +111,4 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 | Preview | Name | ID |
 |:-------:|:-----|:--:|
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" height="32"> | `OBJECTS.MODEL` | `81` |
-| ⚠️ | `OBJECTS.GROUP` | `82` |
-
+|  | `OBJECTS.GROUP` | `82` |
