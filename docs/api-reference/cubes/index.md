@@ -83,30 +83,27 @@ cube.position = {5, 10, 3}
 
 ### `materials[1-6]`
 
-Material ID for each face (1=top, 2=bottom, 3=front, 4=back, 5=left, 6=right).
+Material ID for each face.
 ```lua
 cube.materials[1] = 1  -- Top face: Bright Red
 cube.materials[2] = 2  -- Bottom face: Red
 ```
 
-📖 [See all materials →](../../reference/materials.md)  
 📖 [Learn more about materials →](properties.md#materials)
 
 ### `corners[1-8]`
 
 Vertex positions for cube deformation. Each corner is `{x, y, z}` with values 0-4 (integers).
 ```lua
-cube.corners[1] = {0, 4, 0}  -- Stretch corner upward
-cube.corners[2] = {4, 0, 4}  -- Move corner diagonally
+cube.corners[1] = {0, 4, 0}  -- Default top-left-front
+cube.corners[1] = {0, 4, 2}  -- Deform upward
 ```
 
-📖 [Complete guide to vertex mathematics →](corners.md)
+📖 [Learn more about corners →](properties.md#corners)
 
 ---
 
 ## See Also
 
-- [Cube Properties](properties.md) - Detailed property reference
-- [Cube Corners](corners.md) - Vertex manipulation and mathematics
-- [Examples](examples.md) - Practical use cases
-- [Materials Reference](../../reference/materials.md) - All material IDs
+- [Cube Properties](properties.md) - Detailed reference for position, materials, and corners
+- [Materials Reference](../../reference/materials.md) - All material IDs with previews
