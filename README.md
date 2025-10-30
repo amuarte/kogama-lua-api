@@ -1,187 +1,151 @@
-# KogamaLuaAPI
+# 🌙 KogamaLuaAPI
 
-Standalone Lua scripting mod for KoGaMa
+> **Powerful Lua scripting mod for KoGaMa** — Create, automate, and control everything with code.
 
-⚠️ **Early alpha - expect bugs and changes**
-
----
-
-# Contents
-1. [Introduction](#kogamaluaapi)
-2. [Features](#features)
-3. [Requirements](#requirements)
-4. [Installation](#installation)
-5. [Quick Start](#quick-start)
-6. [Known Issues](#known-issues)
-7. [Used Libraries](#used-libraries)
-8. [Help](#need-help)
+![Version](https://img.shields.io/badge/version-0.3.0--alpha-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)
 
 ---
 
-# **Features**
+## ✨ What You Can Do
 
-## 📜 **Lua Scripting**
+![KogamaLuaAPI Preview](https://raw.githubusercontent.com/amuarte/kogama-lua-api/main/assets/preview.png)
 
-- **Cube Manipulation**:
-  - Create cubes programmatically
-  - Modify positions, materials, and corners
-  - Query existing cubes
-  - Remove cubes dynamically
-
-- **Object Control**:
-  - Spawn game objects (text, doors, logic gates, etc.)
-  - Configure object properties
-  - Link objects together
-  - Event-driven programming
-
-- **File System**:
-  - Load Lua scripts with `/loadscript`
-  - Read text files
-  - Load and process images
-  - Auto-load `init.lua` on startup
-
-- **Data Storage**:
-  - Session storage for runtime data
-  - Organize data with nested tables
-
-- **Event Handlers**:
-  - React to cube removal
-  - Custom game logic
+- 🧩 Create and manipulate cubes with code
+- 🎨 Spawn objects and text
+- 📂 Load 3D models from OBJ files
+- ⚡ Automate complex building tasks
+- 💾 Store and manage data with Lua
 
 ---
 
-# **Requirements**
+## 📋 Requirements
 
-- [KoGaMa Standalone Client](https://www-gamelauncher.kogstatic.com/www/KogamaLauncher.msi)  
-- [BepInEx 6.0.0-be](https://builds.bepinex.dev/projects/bepinex_be)  
-- [.NET 6.0 Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)  
-
----
-
-# **Installation**
-
-## 🚀 **Easy Method (Installer)**
-
-1. Download the latest release of the mod installer [here](https://github.com/Beckowl/KogamaModInstaller/releases/latest)
-2. Download the latest release of KogamaLuaAPI [here](https://github.com/amuarte/kogama-lua-api/releases/latest)
-3. Open the installer and click the **"Browse"** button next to the `Mod Path` field
-4. Locate the downloaded ZIP file and select it. <mark>You do not need to extract the zip file.</mark>
-5. Select your game server and click **"Install"**
-6. Launch the game via the standalone client. <mark>The first launch may take 30 seconds to 2 minutes. Don't worry if it seems frozen.</mark>
-7. Join any game - the mod should load after the loading screen
+- **[KoGaMa Standalone Client](https://www-gamelauncher.kogstatic.com/www/KogamaLauncher.msi)**
+- **[BepInEx 6.0.0-be](https://builds.bepinex.dev/projects/bepinex_be)**
+- **[.NET 6.0 Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)**
 
 ---
 
-## 🛠️ **Manual Installation**
+## 🚀 Installation
+
+### ⚡ **Easy Method (Installer) - RECOMMENDED**
+
+1. Download the [KogamaModInstaller](https://github.com/Beckowl/KogamaModInstaller/releases/latest)
+2. Download the latest [KogamaLuaAPI release](https://github.com/amuarte/kogama-lua-api/releases/latest)
+3. Open the installer and click **"Browse"** next to `Mod Path`
+4. Select the downloaded ZIP file — **Do NOT extract it**
+5. Choose your game server and click **"Install"**
+6. Launch the game via the standalone client
+   - ⏳ First launch may take 30 seconds to 2 minutes
+   - 💡 Don't worry if it seems frozen — it's loading the mod
+
+✅ Done! The mod will auto-create the scripts folder on first run
+
+---
+
+### 🛠️ **Manual Installation**
 
 1. **Locate Your Installation Folder**  
-   Navigate to the folder for your server:
-   - **KoGaMa-WWW**:  
-```
-     %localappdata%/KogamaLauncher-WWW/Launcher/Standalone
-```
-   - **KoGaMa-BR**:  
-```
-     %localappdata%/KogamaLauncher-BR/Launcher/Standalone
-```
-   - **KoGaMa-Friends**:  
-```
-     %localappdata%/KogamaLauncher-Friends/Launcher/Standalone
-```
+   ```
+   KoGaMa-WWW:     %localappdata%/KogamaLauncher-WWW/Launcher/Standalone
+   KoGaMa-BR:      %localappdata%/KogamaLauncher-BR/Launcher/Standalone
+   KoGaMa-Friends: %localappdata%/KogamaLauncher-Friends/Launcher/Standalone
+   ```
 
 2. **Install BepInEx**  
    - Download [BepInEx 6.0.0-be](https://builds.bepinex.dev/projects/bepinex_be)
-   - Extract all contents into the folder from Step 1
+   - Extract into the folder from Step 1
    - Run `Kogama.exe` once
-   - A console window should appear - this means BepInEx installed successfully
-   - Wait for the interop assemblies to generate, then close the game
+   - Wait for setup to complete, then close
 
 3. **Install KogamaLuaAPI**  
-   - Download the latest release from [here](https://github.com/amuarte/kogama-lua-api/releases/latest)
-   - Extract the ZIP contents into the `BepInEx/plugins/` folder
-   - The folder structure should look like:
-```
-     BepInEx/plugins/
+   - Download the latest [release](https://github.com/amuarte/kogama-lua-api/releases/latest)
+   - Extract into `BepInEx/plugins/KogamaLuaAPI/`
+   - Folder structure should look like:
+     ```
+     BepInEx/plugins/KogamaLuaAPI/
      ├── KogamaLuaAPI.dll
      ├── NLua.dll
      ├── KeraLua.dll
-     └── (other dependency files)
-```
+     └── default_scripts/
+     ```
 
-4. **Create Scripts Folder**  
-   Navigate to: `BepInEx/plugins/` and create a folder named `scripts`
-   
-   Full path example:
-```
-   %localappdata%/KogamaLauncher-WWW/Launcher/Standalone/BepInEx/plugins/scripts
-```
+4. **Launch & Start Scripting**  
+   - Run the game and join any project
+   - Scripts folder auto-creates at: `%appdata%/KogamaLuaAPI/scripts/`
+   - Load scripts with: `/loadscript <filename>`
 
-5. **Start KoGaMa**  
-   - Launch the game and join any project
-   - You can now load scripts with `/loadscript <filename>`
-
-✅ **Works standalone or alongside KogamaTools!**
+✅ Works standalone or alongside other mods!
 
 ---
 
-# **Quick Start**
+## 🎓 Quick Start
 
-1. **Create your first script**  
-   In the `scripts/` folder, create a file named `test.lua`:
+Create a file at:
+```
+%appdata%/KogamaLuaAPI/scripts/test.lua
+```
+
+Add this code:
+
 ```lua
--- Create a cube
 local cube = new_cube()
 cube.position = {0, 0, 0}
-cube.materials[1] = 5
-
--- Create a text object
-local obj = new_object("text")
-obj.position = {5, 2, 5}
-obj.text = "Hello Lua!"
-obj.billboard = true
+cube.material = 5
+cube:spawn()
 ```
 
-2. **Load the script in-game**  
-   Open the game console and type:
+Then in-game type:
 ```
-   /loadscript test.lua
+/loadscript test
 ```
 
-3. **Learn more**  
-   Check out the [full API documentation](DOCUMENTATION.md) for all available functions and features.
+---
+
+## 📚 Full Documentation
+
+→ **[DOCUMENTATION.md](DOCUMENTATION.md)** — Complete API reference and examples
 
 ---
 
-# **Known Issues**
+## ⚠️ Important Notes
 
-⚠️ **Current Limitations:**
-- Object position cannot be changed after creation
-- Some object property queries may return outdated data
-
-These issues will be addressed in future updates.
+- **Server timeouts** — Spawning too fast can disconnect you from the server and changes won't save
+  - You'll need to rejoin the game
+  - The mod includes protections but it's not 100% reliable on very fast spawns
 
 ---
 
-# **Used Libraries**
+## 🐛 Troubleshooting
 
-- [BepInEx](https://github.com/BepInEx/BepInEx) - *LGPL-2.1 license*
-- [HarmonyX](https://github.com/BepInEx/HarmonyX) - *MIT license*
-- [Il2CppInterop](https://github.com/BepInEx/Il2CppInterop) - *LGPL-3.0 license*
-- [NLua](https://github.com/NLua/NLua) - *MIT license*
-- [KeraLua](https://github.com/NLua/KeraLua) - *MIT license*
-- [NativeFileDialogSharp](https://github.com/milleniumbug/NativeFileDialogSharp) - *Zlib license*
-- [ParsingHelper](https://github.com/SoftCircuits/ParsingHelper) - *MIT license*
+**Script doesn't load?**
+- Check file is in the correct folder
+- Use `/loadscript filename` (without `.lua`)
+- Check your game chat for error messages
 
----
-
-# **Credits**
-
-Includes code from [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl (Zlib license)  
-Lua scripting API by amuarte
+**Got disconnected while spawning?**
+- You were placing objects too fast
+- Rejoin the game and try again with slower spawning
 
 ---
 
-## **Need Help?**
+## 📜 License & Credits
 
-- 📖 [Full API Documentation](DOCUMENTATION.md)
+**MIT License** — See LICENSE file
+
+Based on [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl
+
+---
+
+## 🤝 Contributing
+
 - 🐛 [Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
+- 💡 [Suggest Features](https://github.com/amuarte/kogama-lua-api/discussions)
+
+---
+
+**⭐ Like this project? Star it on GitHub!**
+
+Made with ❤️ for the KoGaMa community
