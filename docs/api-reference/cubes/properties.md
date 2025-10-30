@@ -69,4 +69,6 @@ cube.corners[1] = {0, 4, 2}
 
 -- Create a sloped surface
 cube.corners[4] = {4, 2, 0}
+
+cube:spawn()
 ```
