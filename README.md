@@ -10,7 +10,7 @@
 
 ## ✨ What You Can Do
 
-![KogamaLuaAPI Preview](https://raw.githubusercontent.com/amuarte/kogama-lua-api/main/assets/preview.png)
+![KogamaLuaAPI Preview](https://github.com/amuarte/kogama-lua-api/blob/dev-0.3/docs/images/preview.png?raw=true)
 
 - 🧩 Create and manipulate cubes with code
 - 🎨 Spawn objects and text
