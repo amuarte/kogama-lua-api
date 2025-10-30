@@ -10,10 +10,10 @@
 
 ## ✨ What You Can Do
 
-![KogamaLuaAPI Preview](https://github.com/amuarte/kogama-lua-api/blob/dev-0.3/docs/images/preview.png?raw=true)
+![KogamaLuaAPI Preview](docs/images/preview.png)
 
 - 🧩 Create and manipulate cubes with code
-- 🎨 Spawn objects and text
+- 🎨 Spawn objects
 - 📂 Load 3D models from OBJ files
 - ⚡ Automate complex building tasks
 - 💾 Store and manage data with Lua
@@ -74,7 +74,7 @@
 
 4. **Launch & Start Scripting**  
    - Run the game and join any project
-   - Scripts folder auto-creates at: `%appdata%/KogamaLuaAPI/scripts/`
+   - Scripts folder auto-creates at: `%localappdata%/KogamaLuaAPI/scripts/`
    - Load scripts with: `/loadscript <filename>`
 
 ✅ Works standalone or alongside other mods!
@@ -85,7 +85,7 @@
 
 Create a file at:
 ```
-%appdata%/KogamaLuaAPI/scripts/test.lua
+%localappdata%/KogamaLuaAPI/scripts/test.lua
 ```
 
 Add this code:
