@@ -1,5 +1,4 @@
 # Cubes
-
 Complete guide to cube manipulation in Kogama Lua API.
 
 ---
@@ -8,18 +7,21 @@ Complete guide to cube manipulation in Kogama Lua API.
 
 ### `new_cube([id])`
 
-Creates a new cube.
+Creates a new cube and returns a cube object for manipulation.
 
 **Parameters:**
-- `id` (optional, number) - Model ID. If omitted, adds cube to currently edited model.
+- `id` (optional, number) - Model ID. If omitted, the cube is added to the currently edited model.
 
 **Returns:** Cube object
+
+**Important:** After setting all properties, you must call `:spawn()` to actually add the cube to the world.
 
 **Example:**
 ```lua
 local cube = new_cube()
 cube.position = {0, 0, 0}
 cube.materials[1] = 1
+cube:spawn()  -- Required - finalizes cube creation
 ```
 
 ---
@@ -28,19 +30,19 @@ cube.materials[1] = 1
 
 ### `get_cube(position)`
 
-Returns cube at specified position or `nil` if not found.
+Returns the cube at the specified position or `nil` if not found.
 
 **Example:**
 ```lua
 local cube = get_cube({5, 10, 3})
 if cube then
-    print("Found cube at position!")
+    print("Cube found!")
 end
 ```
 
 ### `get_cubes([id])`
 
-Returns all cubes from a model. If `id` is omitted, returns cubes from currently edited model.
+Returns all cubes from a model. If `id` is omitted, returns cubes from the currently edited model.
 
 **Example:**
 ```lua
@@ -56,7 +58,7 @@ end
 
 ### `remove_cube(position)`
 
-Removes cube at specified position.
+Removes the cube at the specified position.
 
 **Returns:**
 - `true` - Cube was removed
@@ -79,14 +81,24 @@ end
 Position as `{x, y, z}` (integer coordinates).
 ```lua
 cube.position = {5, 10, 3}
+cube:spawn()
+```
+
+### `material`
+
+Material ID applied to all faces of the cube at once.
+```lua
+cube.material = 5
+cube:spawn()
 ```
 
 ### `materials[1-6]`
 
-Material ID for each face.
+Material ID for each individual face of the cube (1-6, where each number corresponds to a different face).
 ```lua
 cube.materials[1] = 1  -- Top face: Bright Red
 cube.materials[2] = 2  -- Bottom face: Red
+cube:spawn()
 ```
 
 📖 [Learn more about materials →](properties.md#materials)
@@ -95,8 +107,9 @@ cube.materials[2] = 2  -- Bottom face: Red
 
 Vertex positions for cube deformation. Each corner is `{x, y, z}` with values 0-4 (integers).
 ```lua
-cube.corners[1] = {0, 4, 0}  -- Default top-left-front
+cube.corners[1] = {0, 4, 0}  -- Default: top-left-front
 cube.corners[1] = {0, 4, 2}  -- Deform upward
+cube:spawn()
 ```
 
 📖 [Learn more about corners →](properties.md#corners)
