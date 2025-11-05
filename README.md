@@ -181,7 +181,8 @@ Lua scripting API by amuarte
 
 ---
 
-## **Need Help?**
+# **Community & Support**
 
-- 📖 [Full API Documentation](DOCUMENTATION.md)
-- 🐛 [Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
+Join our Discord server for help, sharing scripts, bug reports, and updates!
+
+**[Join Discord Server](https://discord.gg/u6tKuP3k4M)**
