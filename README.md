@@ -1,5 +1,4 @@
 # 🌙 KogamaLuaAPI
-
 > **Powerful Lua scripting mod for KoGaMa** — Create, automate, and control everything with code.
 
 ![Version](https://img.shields.io/badge/version-0.3.0--alpha-blue)
@@ -89,7 +88,6 @@ Create a file at:
 ```
 
 Add this code:
-
 ```lua
 local cube = new_cube()
 cube.position = {0, 0, 0}
@@ -131,18 +129,19 @@ Then in-game type:
 
 ---
 
+## 💬 Community & Support
+
+Join our Discord server for help, sharing scripts, bug reports, and updates!
+
+**[Join Discord Server](https://discord.gg/u6tKuP3k4M)**
+
+---
+
 ## 📜 License & Credits
 
 **MIT License** — See LICENSE file
 
 Based on [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl
-
----
-
-## 🤝 Contributing
-
-- 🐛 [Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
-- 💡 [Suggest Features](https://github.com/amuarte/kogama-lua-api/discussions)
 
 ---
 
