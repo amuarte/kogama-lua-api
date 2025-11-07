@@ -15,10 +15,7 @@ Loads and executes a Lua script from the scripts folder.
 
 **Example:**
 ```lua
--- Load scripts/config.lua
 require("config")
-
--- Load scripts/mods/builder.lua
 require("mods/builder")
 ```
 
@@ -34,16 +31,6 @@ Reads entire text file as string.
 **Returns:**
 - File content (string) on success
 - `nil` on error (file not found, etc.)
-
-**Example:**
-```lua
-local config = read_file("settings.txt")
-if config then
-    print("Config loaded: " .. config)
-else
-    print("Error: Could not load settings.txt")
-end
-```
 
 ---
 
@@ -62,32 +49,6 @@ Loads image file and provides access to pixel data.
   - `pixels[y][x]` - 2D array of pixels (1-indexed)
   - Each pixel has: `.r`, `.g`, `.b`, `.a` (0-255 values)
 - `nil` on error
-
-**Example:**
-```lua
-local img = read_image("texture.png")
-
-if img then
-    print("Image size: " .. img.width .. "x" .. img.height)
-
-    -- Access top-left pixel
-    local pixel = img.pixels[1][1]
-    print("Red: " .. pixel.r)
-    print("Green: " .. pixel.g)
-    print("Blue: " .. pixel.b)
-    print("Alpha: " .. pixel.a)
-
-    -- Loop through all pixels
-    for y = 1, img.height do
-        for x = 1, img.width do
-            local p = img.pixels[y][x]
-            -- Use pixel data...
-        end
-    end
-else
-    print("Error: Could not load image")
-end
-```
 
 ---
 
@@ -108,4 +69,3 @@ All paths are relative to your scripts folder:
 ## See Also
 
 - [Getting Started](../getting-started.md) - Script loading and auto-load
-- [API Reference](../api-reference/) - All available functions
