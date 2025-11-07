@@ -104,7 +104,7 @@ Then in-game type:
 
 ## 📚 Full Documentation
 
-→ **[DOCUMENTATION.md](DOCUMENTATION.md)** — Complete API reference and examples
+→ **[Documentation](docs/index.md)** — Complete API reference and examples
 
 ---
 
