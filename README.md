@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)
 
+n![KogamaLuaAPI Preview](docs/images/preview.png)
+
 
 ---
 
