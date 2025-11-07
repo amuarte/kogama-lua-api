@@ -1,9 +1,9 @@
 # KogamaLuaAPI
 > **Powerful Lua scripting mod for KoGaMa** — Create, automate, and control everything with code.
 
-![Version](https://img.shields.io/badge/version-0.3.0--alpha-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)
+[![Version](https://img.shields.io/badge/version-0.3.0--alpha-blue)](https://github.com/amuarte/kogama-lua-api/releases)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)](docs/index.md)
 
 n![KogamaLuaAPI Preview](docs/images/preview.png)
 
