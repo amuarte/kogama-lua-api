@@ -91,7 +91,7 @@ Add this code:
 ```lua
 local cube = new_cube()
 cube.position = {0, 0, 0}
-cube.material = 5
+cube.materials[1] = 2
 cube:spawn()
 ```
 

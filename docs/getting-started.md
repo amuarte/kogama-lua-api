@@ -43,7 +43,7 @@ print("Hello Kogama!")
 
 local cube = new_cube()
 cube.position = {0, 0, 0}
-cube.material = 5
+cube.materials[1] = 2
 cube:spawn()
 
 print("Cube created!")
@@ -66,7 +66,7 @@ You should see messages in chat and a red cube appear at position 0,0,0!
 for i = 0, 10 do
     local cube = new_cube()
     cube.position = {i, 0, 0}
-    cube.material = 5
+    cube.materials[1] = 5
     cube:spawn()
 end
 ```
@@ -94,9 +94,8 @@ Errors show up in chat. If something doesn't work:
 
 ## Next Steps
 
-- 📚 [API Reference](api-reference.md) - Full list of functions
-- 💡 [Examples](examples.md) - More code examples
+- 📚 [API Reference](index.md) - Full list of functions
 
 ---
 
-[Report Issues](https://github.com/amuarte/kogama-lua-api/issues)
+[Join Discord](https://discord.gg/u6tKuP3k4M)
