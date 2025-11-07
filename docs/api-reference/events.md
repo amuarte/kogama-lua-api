@@ -55,7 +55,7 @@ end)
 on_cube_removed(function(cube)
     local new_cube = new_cube()
     new_cube.position = cube.position
-    new_cube.material = 22  -- Concrete
+    new_cube.materials[1] = 22  -- Concrete
     new_cube:spawn()
 end)
 ```

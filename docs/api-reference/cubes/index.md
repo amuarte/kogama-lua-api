@@ -88,7 +88,7 @@ cube:spawn()
 
 Material ID applied to all faces of the cube at once.
 ```lua
-cube.material = 5
+cube.materials[1] = 5
 cube:spawn()
 ```
 
