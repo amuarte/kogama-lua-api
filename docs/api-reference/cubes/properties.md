@@ -58,17 +58,3 @@ cube.corners[8] = {0, 0, 0}  -- Left-Bottom-Front
 ```
 
 ⚠️ **Note:** There is no reset function - you must manually set corners to default values.
-
-### Example
-```lua
-local cube = new_cube()
-cube.position = {0, 0, 0}
-
--- Deform top-left corner upward
-cube.corners[1] = {0, 4, 2}
-
--- Create a sloped surface
-cube.corners[4] = {4, 2, 0}
-
-cube:spawn()
-```
