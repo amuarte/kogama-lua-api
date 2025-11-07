@@ -44,11 +44,11 @@ Start here if you're new to the API!
 
 ### Common Tasks
 
-\`\`\`lua
+```lua
 -- Create a cube
 local cube = new_cube()
 cube.position = {0, 0, 0}
-cube.material = 5
+cube.materials[1] = 5
 cube:spawn()
 
 -- Spawn an object
@@ -61,19 +61,19 @@ require("mymod/main")
 
 -- Store temporary data
 session.my_value = 42
-\`\`\`
+```
 
 ### Scripts Folder Location
 
-\`\`\`
+```
 %localappdata%/KogamaLuaAPI/scripts/
-\`\`\`
+```
 
 ---
 
 ## Directory Structure
 
-\`\`\`
+```
 docs/
 ├── index.md (you are here)
 ├── getting-started.md
@@ -89,15 +89,15 @@ docs/
 └── reference/
     ├── materials.md
     └── object-types.md
-\`\`\`
+```
 
 ---
 
-## Support & Issues
+## Support & Community
 
-Found a bug? Have a feature request? Open an issue on GitHub:
+Need help? Have suggestions? Join our community!
 
-→ **[Join Discord](https://discord.gg/u6tKuP3k4M)**
+→ **[Join Discord Server](https://discord.gg/u6tKuP3k4M)** - Get help, report issues, and share scripts
 
 ---
 
