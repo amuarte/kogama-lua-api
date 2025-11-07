@@ -1,4 +1,4 @@
-# 🌙 KogamaLuaAPI
+# KogamaLuaAPI
 > **Powerful Lua scripting mod for KoGaMa** — Create, automate, and control everything with code.
 
 ![Version](https://img.shields.io/badge/version-0.3.0--alpha-blue)
@@ -7,19 +7,16 @@
 
 ---
 
-## ✨ What You Can Do
+## What You Can Do
 
-![KogamaLuaAPI Preview](docs/images/preview.png)
-
-- 🧩 Create and manipulate cubes with code
-- 🎨 Spawn objects
-- 📂 Load 3D models from OBJ files
-- ⚡ Automate complex building tasks
-- 💾 Store and manage data with Lua
+- Create and manipulate cubes with code
+- Spawn game objects
+- Automate building tasks
+- Store and manage data with Lua
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - **[KoGaMa Standalone Client](https://www-gamelauncher.kogstatic.com/www/KogamaLauncher.msi)**
 - **[BepInEx 6.0.0-be](https://builds.bepinex.dev/projects/bepinex_be)**
@@ -27,9 +24,9 @@
 
 ---
 
-## 🚀 Installation
+## Installation
 
-### ⚡ **Easy Method (Installer) - RECOMMENDED**
+### Easy Method (Installer) - RECOMMENDED
 
 1. Download the [KogamaModInstaller](https://github.com/Beckowl/KogamaModInstaller/releases/latest)
 2. Download the latest [KogamaLuaAPI release](https://github.com/amuarte/kogama-lua-api/releases/latest)
@@ -37,14 +34,12 @@
 4. Select the downloaded ZIP file — **Do NOT extract it**
 5. Choose your game server and click **"Install"**
 6. Launch the game via the standalone client
-   - ⏳ First launch may take 30 seconds to 2 minutes
-   - 💡 Don't worry if it seems frozen — it's loading the mod
 
 ✅ Done! The mod will auto-create the scripts folder on first run
 
 ---
 
-### 🛠️ **Manual Installation**
+### Manual Installation
 
 1. **Locate Your Installation Folder**  
    ```
@@ -62,32 +57,18 @@
 3. **Install KogamaLuaAPI**  
    - Download the latest [release](https://github.com/amuarte/kogama-lua-api/releases/latest)
    - Extract into `BepInEx/plugins/KogamaLuaAPI/`
-   - Folder structure should look like:
-     ```
-     BepInEx/plugins/KogamaLuaAPI/
-     ├── KogamaLuaAPI.dll
-     ├── NLua.dll
-     ├── KeraLua.dll
-     └── default_scripts/
-     ```
 
 4. **Launch & Start Scripting**  
    - Run the game and join any project
    - Scripts folder auto-creates at: `%localappdata%/KogamaLuaAPI/scripts/`
    - Load scripts with: `/loadscript <filename>`
 
-✅ Works standalone or alongside other mods!
-
 ---
 
-## 🎓 Quick Start
+## Quick Start
 
-Create a file at:
-```
-%localappdata%/KogamaLuaAPI/scripts/test.lua
-```
+Create `%localappdata%/KogamaLuaAPI/scripts/test.lua`:
 
-Add this code:
 ```lua
 local cube = new_cube()
 cube.position = {0, 0, 0}
@@ -95,56 +76,44 @@ cube.materials[1] = 2
 cube:spawn()
 ```
 
-Then in-game type:
-```
-/loadscript test
-```
+In-game type: `/loadscript test`
 
 ---
 
-## 📚 Full Documentation
+## Documentation
 
-→ **[Documentation](docs/index.md)** — Complete API reference and examples
-
----
-
-## ⚠️ Important Notes
-
-- **Server timeouts** — Spawning too fast can disconnect you from the server and changes won't save
-  - You'll need to rejoin the game
-  - The mod includes protections but it's not 100% reliable on very fast spawns
+→ **[Full Documentation](docs/index.md)** — Complete API reference
 
 ---
 
-## 🐛 Troubleshooting
+## Important Notes
+
+- **Server timeouts** — Spawning too fast can disconnect you. Rejoin and try slower.
+- **Script folder:** `%localappdata%/KogamaLuaAPI/scripts/`
+
+---
+
+## Troubleshooting
 
 **Script doesn't load?**
 - Check file is in the correct folder
 - Use `/loadscript filename` (without `.lua`)
-- Check your game chat for error messages
+- Check game chat for error messages
 
 **Got disconnected while spawning?**
 - You were placing objects too fast
-- Rejoin the game and try again with slower spawning
+- Rejoin and try again with slower spawning
 
 ---
 
-## 💬 Community & Support
+## Community & Support
 
-Join our Discord server for help, sharing scripts, bug reports, and updates!
-
-**[Join Discord Server](https://discord.gg/u6tKuP3k4M)**
+[Join Discord Server](https://discord.gg/u6tKuP3k4M) — Help, bug reports, and updates
 
 ---
 
-## 📜 License & Credits
+## License
 
 **MIT License** — See LICENSE file
 
 Based on [KogamaTools](https://github.com/Beckowl/KogamaTools) by Beckowl
-
----
-
-**⭐ Like this project? Star it on GitHub!**
-
-Made with ❤️ for the KoGaMa community

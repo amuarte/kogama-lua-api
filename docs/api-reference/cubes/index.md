@@ -84,14 +84,6 @@ cube.position = {5, 10, 3}
 cube:spawn()
 ```
 
-### `material`
-
-Material ID applied to all faces of the cube at once.
-```lua
-cube.materials[1] = 5
-cube:spawn()
-```
-
 ### `materials[1-6]`
 
 Material ID for each individual face of the cube (1-6, where each number corresponds to a different face).
