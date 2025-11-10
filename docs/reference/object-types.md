@@ -63,12 +63,12 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 
 ## Logic
 
-| Preview | Name | ID |
-|:-------:|:-----|:--:|
+| Preview | Name | ID | Properties |
+|:-------:|:-----|:--:|:-----------|
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/64/T_RoundTime_Default_Icon.png" height="32"> | `OBJECTS.ROUND_TIME` | `91196` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2b/T_WaterCube_Default_Icon.png" height="32"> | `OBJECTS.WATER_CUBE` | `10377` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e7/T_SmokeCube_Default_Icon.png" height="32"> | `OBJECTS.SMOKE_CUBE` | `10373` |
-| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/71/T_Text_Default_Icon.png" height="32"> | `OBJECTS.TEXT` | `10374` |
+| <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/71/T_Text_Default_Icon.png" height="32"> | `OBJECTS.TEXT` | `10374` | [📄](../api-reference/objects/properties/text.md) |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fe/T_Fire_Default_Icon.png" height="32"> | `OBJECTS.FIRE` | `10372` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1e/T_CameraCube_Default_Icon.png" height="32"> | `OBJECTS.CAMERA_CUBE` | `2379699` |
 | <img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a3/T_TeamEditor_Default_Icon.png" height="32"> | `OBJECTS.TEAM_EDITOR` | `9016173` |
