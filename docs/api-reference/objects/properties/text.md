@@ -46,4 +46,4 @@ textObj:spawn()
 
 ## See Also
 - [Objects API](../index.md) - Object creation
-- [Object Types Reference](../../reference/object-types.md) - All object types
+- [Object Types Reference](../../../reference/object-types.md) - All object types
