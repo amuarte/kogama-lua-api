@@ -11,6 +11,7 @@
 .material-card, .object-card {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
@@ -20,6 +21,7 @@
   text-decoration: none;
   color: inherit;
   gap: 10px;
+  overflow: hidden;
 }
 
 .material-card:hover, .object-card:hover {
@@ -56,21 +58,24 @@
   flex-direction: row;
   gap: 6px;
   align-items: center;
-  white-space: nowrap;
+  overflow: hidden;
 }
 
 .material-info code, .object-info code {
-  display: inline;
+  display: inline-block;
   font-size: 0.7rem;
   margin-bottom: 0;
   margin-right: 0;
   font-weight: 600;
   color: var(--md-code-fg-color);
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .material-id, .object-id {
-  display: inline;
+  display: inline-block;
   background: transparent;
   padding: 0;
   border-radius: 0;
@@ -78,6 +83,7 @@
   font-weight: 500;
   color: var(--md-default-fg-color--light);
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* Collapsible sections */
