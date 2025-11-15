@@ -1,36 +1,94 @@
-/* Component styling - tables, details, code blocks */
-.md-typeset table {
-  font-size: 0.85rem;
+/* Component styling - Material & Object Grid Cards + Tables */
+
+/* Material & Object Grid Cards */
+.material-grid, .object-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
   margin: 1.5em 0;
 }
 
-.md-typeset table tbody tr {
-  border-bottom: 1px solid var(--md-tablе-border-color);
+.material-card, .object-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid var(--md-border-color);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
-.md-typeset table img {
-  max-height: 40px;
+.material-card:hover, .object-card:hover {
+  border-color: var(--md-accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.material-preview, .object-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 8px;
+  background: var(--md-code-bg-color);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.material-preview img, .object-preview img {
+  max-width: 32px;
+  max-height: 32px;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
 
-/* Collapsible sections for better UX */
+.material-info, .object-info {
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  word-break: break-word;
+}
+
+.material-info code, .object-info code {
+  display: block;
+  word-break: break-word;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--md-code-fg-color);
+}
+
+.material-id, .object-id {
+  display: inline-block;
+  background: var(--md-code-bg-color);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Collapsible sections */
 .md-typeset details {
   border: 1px solid var(--md-border-color);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 0;
-  margin: 1em 0;
+  margin: 1.5em 0;
+  background: var(--md-code-bg-color);
 }
 
 .md-typeset details summary {
   padding: 1rem;
   cursor: pointer;
   font-weight: 600;
-  background: var(--md-code-bg-color);
+  user-select: none;
 }
 
 .md-typeset details summary:hover {
-  background: var(--md-hover-color);
+  opacity: 0.8;
 }
 
 .md-typeset details[open] summary {
@@ -38,25 +96,28 @@
 }
 
 .md-typeset details > *:not(summary) {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem;
 }
 
-/* Improve code blocks in dark mode */
-[data-md-color-scheme="dark"] .md-typeset code {
-  background: rgba(0, 0, 0, 0.3);
-  color: #e8eef2;
+.md-typeset details > div:first-of-type {
+  padding-top: 1rem;
 }
 
-/* Better scrolling for wide tables */
+.md-typeset details > div:last-of-type {
+  padding-bottom: 1rem;
+}
+
+/* Regular tables */
 .md-typeset table {
+  font-size: 0.85rem;
+  margin: 1.5em 0;
   overflow-x: auto;
   display: block;
   width: 100%;
 }
 
-/* Reference tables (materials, objects) - better readability */
-.md-typeset h2 + table {
-  margin-top: 1.5em;
+.md-typeset table tbody tr {
+  border-bottom: 1px solid var(--md-border-color);
 }
 
 .md-typeset table td {
@@ -65,12 +126,46 @@
 }
 
 .md-typeset table img {
+  max-height: 40px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
   display: block;
   margin: auto;
 }
 
-/* Responsive tables on mobile */
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .material-grid, .object-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .material-grid, .object-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .material-card, .object-card {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 600px) {
+  .material-grid, .object-grid {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 6px;
+  }
+
+  .material-card, .object-card {
+    padding: 8px;
+  }
+
+  .material-info, .object-info {
+    font-size: 0.7rem;
+  }
+
   .md-typeset table {
     font-size: 0.75rem;
   }
