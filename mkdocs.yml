@@ -8,18 +8,25 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Auto (system preference)
     - scheme: light
       primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Dark mode
+        name: Light mode
     - scheme: dark
       primary: indigo
       accent: blue
       toggle:
         icon: material/brightness-4
-        name: Light mode
+        name: Dark mode
   font:
     text: Roboto
     code: Roboto Mono
