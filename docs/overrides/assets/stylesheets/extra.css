@@ -1,52 +1,82 @@
 /* Improved dark mode and table styling */
 
-/* DARK MODE - Complete Override */
-[data-md-color-scheme="dark"] {
-  color-scheme: dark;
+/* DARK MODE - Using CSS media query and theme attributes */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --md-default-bg-color: #1e1e1e;
+    --md-default-fg-color: #e0e0e0;
+    --md-code-bg-color: #263238;
+    --md-code-fg-color: #aed581;
+    --md-border-color: #37474f;
+  }
 
-  /* Background colors */
-  --md-default-bg-color: #1e1e1e;
-  --md-default-fg-color: #e0e0e0;
+  html, body {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+  }
 
-  /* Code blocks */
-  --md-code-bg-color: #263238;
-  --md-code-fg-color: #aed581;
+  .md-container,
+  .md-main {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+  }
 
-  /* Borders and accents */
-  --md-border-color: #37474f;
-  --md-shadow-z1: 0 2px 4px rgba(0,0,0,0.5);
+  .md-header {
+    background-color: #1a1a1a !important;
+  }
 
-  /* Navigation and header */
-  --md-primary-fg-color: #1e1e1e;
-  --md-primary-bg-color: #1e1e1e;
+  .md-tabs {
+    background-color: #252525 !important;
+  }
 
-  /* Text colors */
-  --md-typeset-color: #e0e0e0;
-  --md-typeset-a-color: #81d4fa;
+  .md-nav,
+  .md-nav__list {
+    background-color: #1e1e1e !important;
+  }
 }
 
-/* Ensure body background is dark */
+/* Explicit dark scheme selector */
+[data-md-color-scheme="dark"],
+html.dark,
+html[class*="dark"] {
+  color-scheme: dark;
+  --md-default-bg-color: #1e1e1e !important;
+  --md-default-fg-color: #e0e0e0 !important;
+  --md-code-bg-color: #263238 !important;
+  --md-code-fg-color: #aed581 !important;
+  --md-border-color: #37474f !important;
+}
+
 [data-md-color-scheme="dark"] body,
-[data-md-color-scheme="dark"] .md-container {
+html.dark body,
+html[class*="dark"] body {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
 }
 
-/* Dark mode - navbar and header */
-[data-md-color-scheme="dark"] .md-header {
+[data-md-color-scheme="dark"] .md-container,
+[data-md-color-scheme="dark"] .md-main,
+html.dark .md-container,
+html.dark .md-main {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+[data-md-color-scheme="dark"] .md-header,
+html.dark .md-header {
   background-color: #1a1a1a !important;
 }
 
-[data-md-color-scheme="dark"] .md-tabs {
+[data-md-color-scheme="dark"] .md-tabs,
+html.dark .md-tabs {
   background-color: #252525 !important;
 }
 
-/* Dark mode - sidebar */
-[data-md-color-scheme="dark"] .md-nav__list {
-  background-color: #1e1e1e !important;
-}
-
-[data-md-color-scheme="dark"] .md-nav {
+[data-md-color-scheme="dark"] .md-nav,
+[data-md-color-scheme="dark"] .md-nav__list,
+html.dark .md-nav,
+html.dark .md-nav__list {
   background-color: #1e1e1e !important;
 }
 
