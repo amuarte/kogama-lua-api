@@ -1,0 +1,63 @@
+/* Improved dark mode and table styling */
+
+/* Dark mode - ensure proper contrast */
+[data-md-color-scheme="dark"] {
+  --md-text-color: rgba(255, 255, 255, 0.87);
+  --md-code-bg-color: rgba(0, 0, 0, 0.26);
+}
+
+/* Better table styling for materials and objects */
+.md-typeset table {
+  font-size: 0.85rem;
+  margin: 1.5em 0;
+}
+
+.md-typeset table tbody tr {
+  border-bottom: 1px solid var(--md-tablе-border-color);
+}
+
+.md-typeset table img {
+  max-height: 40px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Collapsible sections for better UX */
+.md-typeset details {
+  border: 1px solid var(--md-border-color);
+  border-radius: 4px;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.md-typeset details summary {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset details summary:hover {
+  background: var(--md-hover-color);
+}
+
+.md-typeset details[open] summary {
+  border-bottom: 1px solid var(--md-border-color);
+}
+
+.md-typeset details > *:not(summary) {
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* Improve code blocks in dark mode */
+[data-md-color-scheme="dark"] .md-typeset code {
+  background: rgba(0, 0, 0, 0.3);
+  color: #e8eef2;
+}
+
+/* Better scrolling for wide tables */
+.md-typeset table {
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+}
