@@ -10,8 +10,8 @@ obj:spawn()
 
 Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 
-!!! tip "Quick Search"
-    Use **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to search for an object by name or ID.
+!!! tip "Search"
+    Use **Ctrl+F** (or **Cmd+F** on Mac) to quickly find an object by name or ID.
 
 ---
 

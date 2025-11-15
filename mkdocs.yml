@@ -8,21 +8,21 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
+    - scheme: slate
+      primary: slate
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
     - scheme: default
       primary: blue
       accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: blue
-      toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to dark mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tracking

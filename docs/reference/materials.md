@@ -10,8 +10,8 @@ cube:spawn()
 
 Based on [Kogama Wiki - Materials](https://kogama.fandom.com/wiki/Materials).
 
-!!! tip "Quick Search"
-    Use **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to search for a material by name or ID.
+!!! tip "Search"
+    Use **Ctrl+F** (or **Cmd+F** on Mac) to quickly find a material by name or ID.
 
 ---
 

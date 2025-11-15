@@ -1,4 +1,72 @@
-/* Component styling - Material & Object Tables */
+/* Professional IDE-style Documentation Theme */
+
+/* Typography & Base Styles */
+:root {
+  --primary-text: #e0e0e0;
+  --secondary-text: #a0a0a0;
+  --border-color: #3a3f47;
+  --code-bg: #1e1e1e;
+  --accent-blue: #569cd6;
+  --accent-green: #4ec9b0;
+}
+
+.md-typeset {
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-blue);
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-typeset p {
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+}
+
+/* Code blocks & inline code */
+.md-typeset code {
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  color: var(--accent-green);
+}
+
+.md-typeset pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.2rem !important;
+  line-height: 1.5;
+}
+
+.md-typeset pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
 
 /* Pixelated images for icon rendering */
 img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
@@ -6,13 +74,85 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   image-rendering: crisp-edges;
 }
 
+/* Admonitions & Tips */
+.md-typeset .admonition {
+  border-left: 3px solid var(--accent-blue);
+  background-color: rgba(86, 156, 214, 0.1);
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.md-typeset .admonition.note {
+  border-left-color: var(--accent-blue);
+}
+
+.md-typeset .admonition.tip {
+  border-left-color: var(--accent-green);
+}
+
+/* Tables - Professional styling */
+.md-typeset table {
+  font-size: 0.9rem;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.md-typeset table thead {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.md-typeset table thead th {
+  padding: 1rem 0.75rem !important;
+  font-weight: 600;
+  text-align: left;
+  color: var(--accent-blue);
+}
+
+.md-typeset table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.md-typeset table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.md-typeset table td {
+  padding: 0.9rem 0.75rem !important;
+  vertical-align: middle;
+  color: var(--primary-text);
+}
+
+.md-typeset table img {
+  max-height: 40px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  margin: auto;
+}
+
+/* Lists */
+.md-typeset ul {
+  margin-bottom: 1rem;
+}
+
+.md-typeset li {
+  margin-bottom: 0.5rem;
+}
+
 /* Collapsible sections */
 .md-typeset details {
-  border: 1px solid var(--md-border-color);
-  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
   padding: 0;
   margin: 1.5em 0;
-  background: var(--md-code-bg-color);
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .md-typeset details summary {
@@ -20,14 +160,17 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   cursor: pointer;
   font-weight: 600;
   user-select: none;
+  color: var(--accent-blue);
+  transition: background-color 0.2s;
 }
 
 .md-typeset details summary:hover {
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .md-typeset details[open] summary {
-  border-bottom: 1px solid var(--md-border-color);
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .md-typeset details > *:not(summary) {
@@ -40,32 +183,6 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
 
 .md-typeset details > div:last-of-type {
   padding-bottom: 1rem;
-}
-
-/* Regular tables */
-.md-typeset table {
-  font-size: 0.85rem;
-  margin: 1.5em 0;
-  overflow-x: auto;
-  display: block;
-  width: 100%;
-}
-
-.md-typeset table tbody tr {
-  border-bottom: 1px solid var(--md-border-color);
-}
-
-.md-typeset table td {
-  padding: 0.75rem !important;
-  vertical-align: middle;
-}
-
-.md-typeset table img {
-  max-height: 40px;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  display: block;
-  margin: auto;
 }
 
 /* Responsive Grid */
