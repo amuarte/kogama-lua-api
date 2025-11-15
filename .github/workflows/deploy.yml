@@ -6,6 +6,7 @@ on:
       - dev-0.5
       - main
       - master
+      - claude/check-docs-file-01XuiZb4HcSzjPyCYErkXAxq
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
