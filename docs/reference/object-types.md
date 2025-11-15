@@ -15,8 +15,6 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 
 ---
 
-<details open>
-<summary>**Pickups** (28 items)</summary>
 <div class="object-grid">
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/55/T_Bazooka_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>BAZOOKA</code><span class="object-id">10355</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/b/b9/T_MachineGun_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>MACHINE_GUN</code><span class="object-id">10353</span></div></div>
@@ -45,12 +43,6 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_CrystalVein_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>CRYSTAL_VEIN</code><span class="object-id">8880187</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/54/T_Costume_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>COSTUME</code><span class="object-id">12496365</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/95/T_Custom_Gun_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>CUSTOM_GUN</code><span class="object-id">12730220</span></div></div>
-</div>
-</details>
-
-<details>
-<summary>**Blueprints** (18 items)</summary>
-<div class="object-grid">
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0e/T_Teleporter_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>TELEPORTER</code><span class="object-id">13481</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/80/T_Platform_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>PLATFORM</code><span class="object-id">19674</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9b/T_VerticalRotator_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>VERTICAL_ROTATOR</code><span class="object-id">20757</span></div></div>
@@ -69,12 +61,6 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/79/T_Door_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>DOOR</code><span class="object-id">12305637</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/57/T_SlidingDoor_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>SLIDING_DOOR</code><span class="object-id">12324723</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8f/T_TrapDoor_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>TRAP_DOOR</code><span class="object-id">12339395</span></div></div>
-</div>
-</details>
-
-<details>
-<summary>**Logic** (20 items)</summary>
-<div class="object-grid">
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/64/T_RoundTime_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>ROUND_TIME</code><span class="object-id">91196</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2b/T_WaterCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>WATER_CUBE</code><span class="object-id">10377</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e7/T_SmokeCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>SMOKE_CUBE</code><span class="object-id">10373</span></div></div>
@@ -97,12 +83,6 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 <div class="object-card"><div class="object-preview"><img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/yellow_team_spawn_point.png" width="32" height="32"></div><div class="object-info"><code>YELLOW_TEAM_SPAWN_POINT</code><span class="object-id">10364</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>BLUE_TEAM_SPAWN_POINT</code><span class="object-id">10361</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/green_team_spawn_point.png" width="32" height="32"></div><div class="object-info"><code>GREEN_TEAM_SPAWN_POINT</code><span class="object-id">10363</span></div></div>
-</div>
-</details>
-
-<details>
-<summary>**Advanced Logic** (13 items)</summary>
-<div class="object-grid">
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/4a/T_TargetCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>TARGET_CUBE</code><span class="object-id">4113945</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/22/T_CountingCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>COUNTING_CUBE</code><span class="object-id">5435011</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/02/T_DelayCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>DELAY_CUBE</code><span class="object-id">10366</span></div></div>
@@ -116,13 +96,6 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fb/T_RandomCube_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>RANDOM_CUBE</code><span class="object-id">10379</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/lever.png" width="32" height="32"></div><div class="object-info"><code>LEVER</code><span class="object-id">4113944</span></div></div>
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_PressurePlate_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>PRESSURE_PLATE</code><span class="object-id">10370</span></div></div>
-</div>
-</details>
-
-<details>
-<summary>**Special** (2 items)</summary>
-<div class="object-grid">
 <div class="object-card"><div class="object-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" width="32" height="32"></div><div class="object-info"><code>MODEL</code><span class="object-id">75579</span></div></div>
 <div class="object-card"><div class="object-preview"></div><div class="object-info"><code>GROUP</code><span class="object-id">10348</span></div></div>
 </div>
-</details>
