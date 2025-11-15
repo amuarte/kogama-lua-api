@@ -3,7 +3,7 @@
 /* Material & Object Grid Cards */
 .material-grid, .object-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 12px;
   margin: 1.5em 0;
 }
@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   width: 40px;
+  min-width: 40px;
   height: 40px;
   margin-bottom: 0;
   background: var(--md-code-bg-color);
@@ -68,10 +69,8 @@
   margin-right: 0;
   font-weight: 600;
   color: var(--md-code-fg-color);
-  flex-shrink: 1;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .material-id, .object-id {
