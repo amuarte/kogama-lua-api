@@ -53,8 +53,9 @@
   width: 100%;
   word-break: break-word;
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
 }
 
 .material-info code, .object-info code {
@@ -62,8 +63,10 @@
   word-break: break-word;
   font-size: 0.7rem;
   margin-bottom: 0;
+  margin-right: 0;
   font-weight: 600;
   color: var(--md-code-fg-color);
+  flex-shrink: 0;
 }
 
 .material-id, .object-id {
@@ -74,6 +77,7 @@
   font-size: 0.65rem;
   font-weight: 500;
   color: var(--md-default-fg-color--light);
+  flex-shrink: 0;
 }
 
 /* Collapsible sections */
