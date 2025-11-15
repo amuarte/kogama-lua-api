@@ -3,7 +3,9 @@ name: Deploy Documentation
 on:
   push:
     branches:
-      - claude/check-docs-file-01XuiZb4HcSzjPyCYErkXAxq
+      - dev-0.5
+      - main
+      - master
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
