@@ -1,54 +1,101 @@
 /* Professional Neutral Dark Documentation Theme */
 
-/* Material Theme Overrides - Neutral Colors */
-:root [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #ffffff;
-  --md-primary-bg-color: #0d0d0d;
-  --md-accent-fg-color: #ffffff;
-  --md-accent-bg-color: #1a1a1a;
-  --md-default-bg-color: #0d0d0d;
-  --md-default-fg-color: #e8e8e8;
-  --md-code-bg-color: #0a0a0a;
-  --md-code-fg-color: #e8e8e8;
-  --md-border-color: #313131;
+/* Material Theme Overrides - Force Neutral Colors with !important */
+:root {
+  --md-primary-fg-color: #ffffff !important;
+  --md-primary-bg-color: #0d0d0d !important;
+  --md-accent-fg-color: #ffffff !important;
+  --md-accent-bg-color: #1a1a1a !important;
+  --md-default-bg-color: #0d0d0d !important;
+  --md-default-fg-color: #e8e8e8 !important;
+  --md-code-bg-color: #0a0a0a !important;
+  --md-code-fg-color: #e8e8e8 !important;
+  --md-border-color: #313131 !important;
+  --md-shadow-z1: 0 0 0 rgba(0, 0, 0, 0) !important;
+  --md-shadow-z2: 0 0 0 rgba(0, 0, 0, 0) !important;
+  --md-shadow-z3: 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 
-/* Force neutral background */
-html[data-md-color-scheme="slate"] {
-  background-color: #0d0d0d;
+/* Force neutral background on all elements */
+html {
+  background-color: #0d0d0d !important;
 }
 
-html[data-md-color-scheme="slate"] .md-header {
-  background-color: #0f0f0f;
-  border-bottom-color: #313131;
+body {
+  background-color: #0d0d0d !important;
 }
 
-html[data-md-color-scheme="slate"] .md-tabs {
-  background-color: #0f0f0f;
+.md-header {
+  background-color: #0f0f0f !important;
+  border-bottom-color: #313131 !important;
 }
 
-html[data-md-color-scheme="slate"] .md-nav {
-  background-color: #0d0d0d;
+.md-tabs {
+  background-color: #0f0f0f !important;
+  border-bottom-color: #313131 !important;
 }
 
-html[data-md-color-scheme="slate"] .md-content {
-  background-color: #0d0d0d;
+.md-nav {
+  background-color: #0d0d0d !important;
 }
 
-html[data-md-color-scheme="slate"] .md-footer {
-  background-color: #0f0f0f;
-  border-top-color: #313131;
+.md-content {
+  background-color: #0d0d0d !important;
+}
+
+.md-footer {
+  background-color: #0f0f0f !important;
+  border-top-color: #313131 !important;
+}
+
+.md-sidebar {
+  background-color: #0d0d0d !important;
+}
+
+.md-search__form {
+  background-color: #1a1a1a !important;
+}
+
+/* Additional overrides for Material theme elements */
+.md-nav__item,
+.md-nav__link,
+.md-nav__title {
+  background-color: transparent !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.md-tabs__link {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.md-tabs__link--active {
+  color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
+
+.md-header__inner {
+  background-color: #0f0f0f !important;
+}
+
+.md-header__button {
+  color: #ffffff !important;
+}
+
+.md-search__input {
+  background-color: transparent !important;
+  color: #e8e8e8 !important;
+}
+
+.md-search__input::placeholder {
+  color: #a8a8a8 !important;
 }
 
 /* Typography & Base Styles */
-:root {
-  --primary-text: #e8e8e8;
-  --secondary-text: #a8a8a8;
-  --border-color: #313131;
-  --code-bg: #0d0d0d;
-  --bg-hover: #1a1a1a;
-}
-
 .md-typeset {
   line-height: 1.6;
   letter-spacing: 0.3px;
