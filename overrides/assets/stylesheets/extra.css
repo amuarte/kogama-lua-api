@@ -1,0 +1,419 @@
+/* Professional Neutral Dark Documentation Theme */
+
+/* Material Theme Overrides - Force Neutral Colors with !important */
+:root {
+  --md-primary-fg-color: #ffffff !important;
+  --md-primary-bg-color: #0d0d0d !important;
+  --md-accent-fg-color: #ffffff !important;
+  --md-accent-bg-color: #1a1a1a !important;
+  --md-default-bg-color: #0d0d0d !important;
+  --md-default-fg-color: #e8e8e8 !important;
+  --md-code-bg-color: #0a0a0a !important;
+  --md-code-fg-color: #e8e8e8 !important;
+  --md-border-color: #313131 !important;
+  --md-shadow-z1: 0 0 0 rgba(0, 0, 0, 0) !important;
+  --md-shadow-z2: 0 0 0 rgba(0, 0, 0, 0) !important;
+  --md-shadow-z3: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+/* Force neutral background on all elements */
+html {
+  background-color: #0d0d0d !important;
+}
+
+body {
+  background-color: #0d0d0d !important;
+}
+
+.md-header {
+  background-color: #0f0f0f !important;
+  border-bottom-color: #313131 !important;
+}
+
+.md-tabs {
+  background-color: #0f0f0f !important;
+  border-bottom-color: #313131 !important;
+}
+
+.md-nav {
+  background-color: #0d0d0d !important;
+}
+
+.md-content {
+  background-color: #0d0d0d !important;
+}
+
+.md-footer {
+  background-color: #0f0f0f !important;
+  border-top-color: #313131 !important;
+}
+
+.md-sidebar {
+  background-color: #161616 !important;
+}
+
+.md-sidebar--primary {
+  background-color: #161616 !important;
+}
+
+.md-sidebar--secondary {
+  background-color: #161616 !important;
+}
+
+.md-search__form {
+  background-color: #1a1a1a !important;
+}
+
+/* Additional overrides for Material theme elements */
+.md-nav__item,
+.md-nav__link,
+.md-nav__title {
+  background-color: transparent !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.md-tabs__link {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.md-tabs__link--active {
+  color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
+
+.md-header__inner {
+  background-color: #0f0f0f !important;
+}
+
+.md-header__button {
+  color: #ffffff !important;
+}
+
+.md-search__input {
+  background-color: transparent !important;
+  color: #e8e8e8 !important;
+}
+
+.md-search__input::placeholder {
+  color: #a8a8a8 !important;
+}
+
+/* Remove all Material theme color tints */
+[data-md-color-scheme="slate"] {
+  color-scheme: dark !important;
+}
+
+[data-md-color-scheme="slate"] * {
+  background-color: transparent !important;
+  border-color: #313131 !important;
+}
+
+/* Force specific elements */
+.md-main {
+  background-color: #0d0d0d !important;
+}
+
+.md-container {
+  background-color: #0d0d0d !important;
+}
+
+.md-drawer {
+  background-color: #0d0d0d !important;
+}
+
+.md-overlay {
+  background-color: transparent !important;
+}
+
+/* Remove Material theme gradients and shadows */
+body {
+  background: #0d0d0d !important;
+}
+
+html {
+  background: #0d0d0d !important;
+}
+
+/* Button styles */
+.md-button {
+  color: #ffffff !important;
+  border-color: #313131 !important;
+}
+
+/* Link colors */
+.md-typeset a {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Sidebar and Table of Contents styling */
+.md-toc {
+  background-color: #161616 !important;
+}
+
+.md-nav {
+  background-color: #161616 !important;
+}
+
+.md-nav__list {
+  background-color: #161616 !important;
+}
+
+.md-nav__item {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.md-nav__link {
+  color: #e8e8e8 !important;
+}
+
+.md-nav__link:hover {
+  background-color: #1a1a1a !important;
+}
+
+/* Typography & Base Styles */
+.md-typeset {
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #e8e8e8;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.md-typeset h3 {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #f0f0f0;
+}
+
+.md-typeset p {
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+}
+
+/* Code blocks & inline code */
+.md-typeset code {
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  color: #e8e8e8;
+}
+
+.md-typeset pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.2rem !important;
+  line-height: 1.5;
+}
+
+.md-typeset pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* Pixelated images for icon rendering */
+img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Admonitions & Tips */
+.md-typeset .admonition {
+  border-left: 3px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.md-typeset .admonition.note {
+  border-left-color: #666666;
+}
+
+.md-typeset .admonition.tip {
+  border-left-color: #666666;
+}
+
+/* Tables - Professional styling */
+.md-typeset table {
+  font-size: 0.9rem;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.md-typeset table thead {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.md-typeset table thead th {
+  padding: 1rem 0.75rem !important;
+  font-weight: 600;
+  text-align: left;
+  color: #ffffff;
+}
+
+.md-typeset table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.md-typeset table tbody tr:hover {
+  background-color: var(--bg-hover);
+}
+
+.md-typeset table td {
+  padding: 0.9rem 0.75rem !important;
+  vertical-align: middle;
+  color: var(--primary-text);
+}
+
+.md-typeset table img {
+  max-height: 40px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  margin: auto;
+}
+
+/* Lists */
+.md-typeset ul {
+  margin-bottom: 1rem;
+}
+
+.md-typeset li {
+  margin-bottom: 0.5rem;
+}
+
+/* Collapsible sections */
+.md-typeset details {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0;
+  margin: 1.5em 0;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.md-typeset details summary {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.md-typeset details summary:hover {
+  background-color: var(--bg-hover);
+}
+
+.md-typeset details[open] summary {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-hover);
+}
+
+.md-typeset details > *:not(summary) {
+  padding: 0 1rem;
+}
+
+.md-typeset details > div:first-of-type {
+  padding-top: 1rem;
+}
+
+.md-typeset details > div:last-of-type {
+  padding-bottom: 1rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .material-grid, .object-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .material-grid, .object-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+  }
+
+  .material-card, .object-card {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .material-preview, .object-preview {
+    width: 36px;
+    height: 36px;
+  }
+
+  .material-info, .object-info {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .material-grid, .object-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .material-card, .object-card {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .material-preview, .object-preview {
+    width: 36px;
+    height: 36px;
+  }
+
+  .material-info, .object-info {
+    font-size: 0.65rem;
+  }
+
+  .md-typeset table {
+    font-size: 0.75rem;
+  }
+
+  .md-typeset table td {
+    padding: 0.5rem !important;
+  }
+
+  .md-typeset table img {
+    max-height: 28px;
+  }
+}
