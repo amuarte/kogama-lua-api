@@ -1,8 +1,17 @@
 # Materials Reference
 
-Complete list of all material IDs with visual previews.
+Complete list of all **70 material IDs** for cube faces. Assign these to `cube.materials[1-6]` for each face.
+
+```lua
+cube.materials[1] = 2    -- Red
+cube.materials[2] = 12   -- Green
+cube:spawn()
+```
 
 Based on [Kogama Wiki - Materials](https://kogama.fandom.com/wiki/Materials).
+
+!!! tip "Quick Search"
+    Use **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to search for a material by name or ID.
 
 ---
 

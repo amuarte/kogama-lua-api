@@ -1,8 +1,17 @@
 # Object Types Reference
 
-Complete list of all spawnable object types with visual previews.
+Complete list of all **70+ spawnable objects** in KoGaMa. Spawn objects with `new_object()`.
+
+```lua
+local obj = new_object(OBJECTS.TELEPORTER)
+obj.position = {0, 5, 0}
+obj:spawn()
+```
 
 Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
+
+!!! tip "Quick Search"
+    Use **Ctrl+F** (Windows/Linux) or **Cmd+F** (Mac) to search for an object. Objects are organized by category: Pickups, Blueprints, Logic, and Advanced Logic.
 
 ---
 
