@@ -95,6 +95,54 @@ body {
   color: #a8a8a8 !important;
 }
 
+/* Remove all Material theme color tints */
+[data-md-color-scheme="slate"] {
+  color-scheme: dark !important;
+}
+
+[data-md-color-scheme="slate"] * {
+  background-color: transparent !important;
+  border-color: #313131 !important;
+}
+
+/* Force specific elements */
+.md-main {
+  background-color: #0d0d0d !important;
+}
+
+.md-container {
+  background-color: #0d0d0d !important;
+}
+
+.md-drawer {
+  background-color: #0d0d0d !important;
+}
+
+.md-overlay {
+  background-color: transparent !important;
+}
+
+/* Remove Material theme gradients and shadows */
+body {
+  background: #0d0d0d !important;
+}
+
+html {
+  background: #0d0d0d !important;
+}
+
+/* Button styles */
+.md-button {
+  color: #ffffff !important;
+  border-color: #313131 !important;
+}
+
+/* Link colors */
+.md-typeset a {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
 /* Typography & Base Styles */
 .md-typeset {
   line-height: 1.6;
