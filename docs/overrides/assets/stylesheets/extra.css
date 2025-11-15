@@ -1,5 +1,45 @@
 /* Professional Neutral Dark Documentation Theme */
 
+/* Material Theme Overrides - Neutral Colors */
+:root [data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #0d0d0d;
+  --md-accent-fg-color: #ffffff;
+  --md-accent-bg-color: #1a1a1a;
+  --md-default-bg-color: #0d0d0d;
+  --md-default-fg-color: #e8e8e8;
+  --md-code-bg-color: #0a0a0a;
+  --md-code-fg-color: #e8e8e8;
+  --md-border-color: #313131;
+}
+
+/* Force neutral background */
+html[data-md-color-scheme="slate"] {
+  background-color: #0d0d0d;
+}
+
+html[data-md-color-scheme="slate"] .md-header {
+  background-color: #0f0f0f;
+  border-bottom-color: #313131;
+}
+
+html[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0f0f0f;
+}
+
+html[data-md-color-scheme="slate"] .md-nav {
+  background-color: #0d0d0d;
+}
+
+html[data-md-color-scheme="slate"] .md-content {
+  background-color: #0d0d0d;
+}
+
+html[data-md-color-scheme="slate"] .md-footer {
+  background-color: #0f0f0f;
+  border-top-color: #313131;
+}
+
 /* Typography & Base Styles */
 :root {
   --primary-text: #e8e8e8;
@@ -12,6 +52,7 @@
 .md-typeset {
   line-height: 1.6;
   letter-spacing: 0.3px;
+  color: #e8e8e8;
 }
 
 .md-typeset h1 {
