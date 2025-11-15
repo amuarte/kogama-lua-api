@@ -2,8 +2,6 @@
 
 Complete Lua scripting documentation for **KogamaLuaAPI** v0.4-alpha — A powerful mod that lets you automate and control everything in KoGaMa with code.
 
-![KogamaLuaAPI](images/preview.png)
-
 ---
 
 ## ✨ What You Can Do

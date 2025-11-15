@@ -8,22 +8,18 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: light
+    - scheme: light
       primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: dark
+        name: Dark mode
+    - scheme: dark
       primary: blue
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
-  logo: images/preview.png
-  favicon: images/preview.png
+        name: Light mode
   features:
     - navigation.instant
     - navigation.tracking
