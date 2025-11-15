@@ -15,73 +15,73 @@ Based on [Kogama Wiki - Materials](https://kogama.fandom.com/wiki/Materials).
 
 ---
 
-<div class="material-grid">
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/79/T_BrightRed_Default_Icon.png" width="32" height="32"></div><code>BRIGHT_RED</code><span class="material-id">1</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/10/T_Red_Default_Icon.png" width="32" height="32"></div><code>RED</code><span class="material-id">2</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/09/T_DarkRed_Default_Icon.png" width="32" height="32"></div><code>DARK_RED</code><span class="material-id">3</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/df/T_Sand_Default_Icon.png" width="32" height="32"></div><code>SAND</code><span class="material-id">4</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/dd/T_LightPurpleFabric_Default_Icon.png" width="32" height="32"></div><code>LIGHT_PURPLE_FABRIC</code><span class="material-id">5</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/09/T_BrightBlue_Default_Icon.png" width="32" height="32"></div><code>BRIGHT_BLUE</code><span class="material-id">6</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/52/T_Blue_Default_Icon.png" width="32" height="32"></div><code>BLUE</code><span class="material-id">7</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/13/T_DarkBlue_Default_Icon.png" width="32" height="32"></div><code>DARK_BLUE</code><span class="material-id">8</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/04/T_Caramel_Default_Icon.png" width="32" height="32"></div><code>CARAMEL</code><span class="material-id">9</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/90/T_PurpleFabric_Default_Icon.png" width="32" height="32"></div><code>PURPLE_FABRIC</code><span class="material-id">10</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fd/T_BrightGreen_Default_Icon.png" width="32" height="32"></div><code>BRIGHT_GREEN</code><span class="material-id">11</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/43/T_Green_Default_Icon.png" width="32" height="32"></div><code>GREEN</code><span class="material-id">12</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2b/T_DarkGreen_Default_Icon.png" width="32" height="32"></div><code>DARK_GREEN</code><span class="material-id">13</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/30/T_Ceramic_Default_Icon.png" width="32" height="32"></div><code>CERAMIC</code><span class="material-id">14</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5b/T_DarkPurpleFabric_Default_Icon.png" width="32" height="32"></div><code>DARK_PURPLE_FABRIC</code><span class="material-id">15</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9c/T_Yellow_Default_Icon.png" width="32" height="32"></div><code>YELLOW</code><span class="material-id">16</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/74/T_BrightOrange_Default_Icon.png" width="32" height="32"></div><code>BRIGHT_ORANGE</code><span class="material-id">17</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/88/T_Orange_Default_Icon.png" width="32" height="32"></div><code>ORANGE</code><span class="material-id">18</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/ca/T_Butter_Default_Icon.png" width="32" height="32"></div><code>BUTTER</code><span class="material-id">19</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/40/T_Sandstone_Default_Icon.png" width="32" height="32"></div><code>SANDSTONE</code><span class="material-id">20</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" width="32" height="32"></div><code>LIGHT_CONCRETE</code><span class="material-id">21</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/c8/T_Concrete_Default_Icon.png" width="32" height="32"></div><code>CONCRETE</code><span class="material-id">22</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5c/T_DarkConcrete_Default_Icon.png" width="32" height="32"></div><code>DARK_CONCRETE</code><span class="material-id">23</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/29/T_BlackConcrete_Default_Icon.png" width="32" height="32"></div><code>BLACK_CONCRETE</code><span class="material-id">24</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0c/T_Khaki_Default_Icon.png" width="32" height="32"></div><code>KHAKI</code><span class="material-id">25</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/7a/T_Ice_Default_Icon.png" width="32" height="32"></div><code>ICE</code><span class="material-id">26</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_Lava_Default_Icon.png" width="32" height="32"></div><code>LAVA</code><span class="material-id">27</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/c2/T_Bouncy_Default_Icon.png" width="32" height="32"></div><code>BOUNCY</code><span class="material-id">28</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0e/Poison_new.png" width="32" height="32"></div><code>POISON</code><span class="material-id">29</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/63/T_Parkour_Default_Icon.png" width="32" height="32"></div><code>PARKOUR</code><span class="material-id">30</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/16/T_Bricks_Default_Icon.png" width="32" height="32"></div><code>BRICKS</code><span class="material-id">31</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_BrightWood_Default_Icon.png" width="32" height="32"></div><code>BRIGHT_WOOD</code><span class="material-id">32</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_Cobblestone_Default_Icon.png" width="32" height="32"></div><code>COBBLESTONE</code><span class="material-id">33</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/6f/T_Cement_Default_Icon.png" width="32" height="32"></div><code>CEMENT</code><span class="material-id">34</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/60/T_Camouflage_Default_Icon.png" width="32" height="32"></div><code>CAMOUFLAGE</code><span class="material-id">35</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/71/T_GreenPavement_Default_Icon.png" width="32" height="32"></div><code>GREEN_PAVEMENT</code><span class="material-id">36</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/15/T_AncientCobblestone_Default_Icon.png" width="32" height="32"></div><code>ANCIENT_COBBLESTONE</code><span class="material-id">37</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/91/T_RedBricks_Default_Icon.png" width="32" height="32"></div><code>RED_BRICKS</code><span class="material-id">38</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/6a/T_YellowBricks_Default_Icon.png" width="32" height="32"></div><code>YELLOW_BRICKS</code><span class="material-id">39</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/55/T_Zigzag_Default_Icon.png" width="32" height="32"></div><code>ZIGZAG</code><span class="material-id">40</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/3c/T_MetalPattern_Default_Icon.png" width="32" height="32"></div><code>METAL_PATTERN</code><span class="material-id">41</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f1/T_Metal_Default_Icon.png" width="32" height="32"></div><code>METAL</code><span class="material-id">42</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f6/T_Mushroom_Default_Icon.png" width="32" height="32"></div><code>MUSHROOM</code><span class="material-id">43</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/39/T_BlackIce_Default_Icon.png" width="32" height="32"></div><code>BLACK_ICE</code><span class="material-id">44</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/d3/T_PinkFabric_Default_Icon.png" width="32" height="32"></div><code>PINK_FABRIC</code><span class="material-id">45</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f3/T_RedGrid_Default_Icon.png" width="32" height="32"></div><code>RED_GRID</code><span class="material-id">46</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9b/T_GreenGrid_Default_Icon.png" width="32" height="32"></div><code>GREEN_GRID</code><span class="material-id">47</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/22/T_Circuit_Default_Icon.png" width="32" height="32"></div><code>CIRCUIT</code><span class="material-id">48</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5a/T_GreyBricks_Default_Icon.png" width="32" height="32"></div><code>GREY_BRICKS</code><span class="material-id">49</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f7/T_Spotty_Default_Icon.png" width="32" height="32"></div><code>SPOTTY</code><span class="material-id">50</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1e/T_MetalScraps_Default_Icon.png" width="32" height="32"></div><code>METAL_SCRAPS</code><span class="material-id">51</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/47/T_Slime_Default_Icon.png" width="32" height="32"></div><code>SLIME</code><span class="material-id">52</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/31/T_DarkWood_Default_Icon.png" width="32" height="32"></div><code>DARK_WOOD</code><span class="material-id">54</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/61/T_SuperBouncy_Default_Icon.png" width="32" height="32"></div><code>SUPER_BOUNCY</code><span class="material-id">55</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8b/T_Cloud_Default_Icon.png" width="32" height="32"></div><code>CLOUD</code><span class="material-id">56</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/20/T_SoftDestructible_Default_Icon.png" width="32" height="32"></div><code>SOFT_DESTRUCTIBLE</code><span class="material-id">57</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/7a/T_MediumDestructible_Default_Icon.png" width="32" height="32"></div><code>MEDIUM_DESTRUCTIBLE</code><span class="material-id">58</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/28/T_HardDestructible_Default_Icon.png" width="32" height="32"></div><code>HARD_DESTRUCTIBLE</code><span class="material-id">59</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/d5/T_CrackedIce_Default_Icon.png" width="32" height="32"></div><code>CRACKED_ICE</code><span class="material-id">60</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/44/T_Striped_Cement_Default_Icon.png" width="32" height="32"></div><code>STRIPED_CEMENT</code><span class="material-id">61</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5a/T_Machinery_Default_Icon.png" width="32" height="32"></div><code>MACHINERY</code><span class="material-id">62</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8f/T_EmbossedMetal_Default_Icon.png" width="32" height="32"></div><code>EMBOSSED_METAL</code><span class="material-id">63</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/4b/T_Scrolling_Default_Icon.gif" width="32" height="32"></div><code>SCROLLING</code><span class="material-id">64</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/01/Kill.png" width="32" height="32"></div><code>KILL</code><span class="material-id">65</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/38/T_Heal_Default_Icon.png" width="32" height="32"></div><code>HEAL</code><span class="material-id">66</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/29/T_Slow_Default_Icon.png" width="32" height="32"></div><code>SLOW</code><span class="material-id">67</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1e/T_Speed_Default_Icon.png" width="32" height="32"></div><code>SPEED</code><span class="material-id">68</span></div>
-<div class="material-card"><div class="material-preview"><img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/84/T_Crumble_Default_Icon.png" width="32" height="32"></div><code>CRUMBLE</code><span class="material-id">69</span></div>
-</div>
+| Icon | Name | ID |
+|------|------|-----|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/79/T_BrightRed_Default_Icon.png" width="32" height="32">|`BRIGHT_RED`|1|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/10/T_Red_Default_Icon.png" width="32" height="32">|`RED`|2|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/09/T_DarkRed_Default_Icon.png" width="32" height="32">|`DARK_RED`|3|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/df/T_Sand_Default_Icon.png" width="32" height="32">|`SAND`|4|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/dd/T_LightPurpleFabric_Default_Icon.png" width="32" height="32">|`LIGHT_PURPLE_FABRIC`|5|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/09/T_BrightBlue_Default_Icon.png" width="32" height="32">|`BRIGHT_BLUE`|6|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/52/T_Blue_Default_Icon.png" width="32" height="32">|`BLUE`|7|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/13/T_DarkBlue_Default_Icon.png" width="32" height="32">|`DARK_BLUE`|8|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/04/T_Caramel_Default_Icon.png" width="32" height="32">|`CARAMEL`|9|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/90/T_PurpleFabric_Default_Icon.png" width="32" height="32">|`PURPLE_FABRIC`|10|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fd/T_BrightGreen_Default_Icon.png" width="32" height="32">|`BRIGHT_GREEN`|11|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/43/T_Green_Default_Icon.png" width="32" height="32">|`GREEN`|12|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2b/T_DarkGreen_Default_Icon.png" width="32" height="32">|`DARK_GREEN`|13|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/30/T_Ceramic_Default_Icon.png" width="32" height="32">|`CERAMIC`|14|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5b/T_DarkPurpleFabric_Default_Icon.png" width="32" height="32">|`DARK_PURPLE_FABRIC`|15|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9c/T_Yellow_Default_Icon.png" width="32" height="32">|`YELLOW`|16|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/74/T_BrightOrange_Default_Icon.png" width="32" height="32">|`BRIGHT_ORANGE`|17|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/88/T_Orange_Default_Icon.png" width="32" height="32">|`ORANGE`|18|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/ca/T_Butter_Default_Icon.png" width="32" height="32">|`BUTTER`|19|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/40/T_Sandstone_Default_Icon.png" width="32" height="32">|`SANDSTONE`|20|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" width="32" height="32">|`LIGHT_CONCRETE`|21|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/c8/T_Concrete_Default_Icon.png" width="32" height="32">|`CONCRETE`|22|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5c/T_DarkConcrete_Default_Icon.png" width="32" height="32">|`DARK_CONCRETE`|23|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/29/T_BlackConcrete_Default_Icon.png" width="32" height="32">|`BLACK_CONCRETE`|24|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0c/T_Khaki_Default_Icon.png" width="32" height="32">|`KHAKI`|25|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/7a/T_Ice_Default_Icon.png" width="32" height="32">|`ICE`|26|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_Lava_Default_Icon.png" width="32" height="32">|`LAVA`|27|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/c/c2/T_Bouncy_Default_Icon.png" width="32" height="32">|`BOUNCY`|28|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0e/Poison_new.png" width="32" height="32">|`POISON`|29|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/63/T_Parkour_Default_Icon.png" width="32" height="32">|`PARKOUR`|30|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/16/T_Bricks_Default_Icon.png" width="32" height="32">|`BRICKS`|31|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_BrightWood_Default_Icon.png" width="32" height="32">|`BRIGHT_WOOD`|32|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_Cobblestone_Default_Icon.png" width="32" height="32">|`COBBLESTONE`|33|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/6f/T_Cement_Default_Icon.png" width="32" height="32">|`CEMENT`|34|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/60/T_Camouflage_Default_Icon.png" width="32" height="32">|`CAMOUFLAGE`|35|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/71/T_GreenPavement_Default_Icon.png" width="32" height="32">|`GREEN_PAVEMENT`|36|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/15/T_AncientCobblestone_Default_Icon.png" width="32" height="32">|`ANCIENT_COBBLESTONE`|37|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/91/T_RedBricks_Default_Icon.png" width="32" height="32">|`RED_BRICKS`|38|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/6a/T_YellowBricks_Default_Icon.png" width="32" height="32">|`YELLOW_BRICKS`|39|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/55/T_Zigzag_Default_Icon.png" width="32" height="32">|`ZIGZAG`|40|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/3c/T_MetalPattern_Default_Icon.png" width="32" height="32">|`METAL_PATTERN`|41|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f1/T_Metal_Default_Icon.png" width="32" height="32">|`METAL`|42|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f6/T_Mushroom_Default_Icon.png" width="32" height="32">|`MUSHROOM`|43|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/39/T_BlackIce_Default_Icon.png" width="32" height="32">|`BLACK_ICE`|44|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/d3/T_PinkFabric_Default_Icon.png" width="32" height="32">|`PINK_FABRIC`|45|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f3/T_RedGrid_Default_Icon.png" width="32" height="32">|`RED_GRID`|46|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9b/T_GreenGrid_Default_Icon.png" width="32" height="32">|`GREEN_GRID`|47|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/22/T_Circuit_Default_Icon.png" width="32" height="32">|`CIRCUIT`|48|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5a/T_GreyBricks_Default_Icon.png" width="32" height="32">|`GREY_BRICKS`|49|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/f7/T_Spotty_Default_Icon.png" width="32" height="32">|`SPOTTY`|50|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1e/T_MetalScraps_Default_Icon.png" width="32" height="32">|`METAL_SCRAPS`|51|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/47/T_Slime_Default_Icon.png" width="32" height="32">|`SLIME`|52|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/31/T_DarkWood_Default_Icon.png" width="32" height="32">|`DARK_WOOD`|54|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/61/T_SuperBouncy_Default_Icon.png" width="32" height="32">|`SUPER_BOUNCY`|55|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8b/T_Cloud_Default_Icon.png" width="32" height="32">|`CLOUD`|56|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/20/T_SoftDestructible_Default_Icon.png" width="32" height="32">|`SOFT_DESTRUCTIBLE`|57|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/7a/T_MediumDestructible_Default_Icon.png" width="32" height="32">|`MEDIUM_DESTRUCTIBLE`|58|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/28/T_HardDestructible_Default_Icon.png" width="32" height="32">|`HARD_DESTRUCTIBLE`|59|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/d/d5/T_CrackedIce_Default_Icon.png" width="32" height="32">|`CRACKED_ICE`|60|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/44/T_Striped_Cement_Default_Icon.png" width="32" height="32">|`STRIPED_CEMENT`|61|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/5a/T_Machinery_Default_Icon.png" width="32" height="32">|`MACHINERY`|62|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8f/T_EmbossedMetal_Default_Icon.png" width="32" height="32">|`EMBOSSED_METAL`|63|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/4b/T_Scrolling_Default_Icon.gif" width="32" height="32">|`SCROLLING`|64|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/01/Kill.png" width="32" height="32">|`KILL`|65|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/3/38/T_Heal_Default_Icon.png" width="32" height="32">|`HEAL`|66|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/29/T_Slow_Default_Icon.png" width="32" height="32">|`SLOW`|67|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/1/1e/T_Speed_Default_Icon.png" width="32" height="32">|`SPEED`|68|
+|<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/84/T_Crumble_Default_Icon.png" width="32" height="32">|`CRUMBLE`|69|

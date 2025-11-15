@@ -1,67 +1,9 @@
-/* Component styling - Material & Object Grid Cards + Tables */
+/* Component styling - Material & Object Tables */
 
-/* Material & Object Grid Cards */
-.material-grid, .object-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 12px;
-  margin: 1.5em 0;
-}
-
-.material-card, .object-card {
-  display: grid;
-  grid-template-columns: 40px 1fr auto;
-  align-items: center;
-  padding: 8px 10px;
-  border: 1px solid var(--md-border-color);
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  color: inherit;
-  gap: 8px;
-  white-space: nowrap;
-}
-
-.material-card:hover, .object-card:hover {
-  border-color: var(--md-accent-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.material-preview, .object-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: var(--md-code-bg-color);
-  border-radius: 4px;
-}
-
-.material-preview img, .object-preview img {
-  width: 32px;
-  height: 32px;
+/* Pixelated images for icon rendering */
+img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-}
-
-.material-info, .object-info {
-  display: contents;
-}
-
-.material-info code, .object-info code {
-  font-size: 0.65rem;
-  margin: 0;
-  font-weight: 600;
-  color: var(--md-code-fg-color);
-}
-
-.material-id, .object-id {
-  font-size: 0.6rem;
-  font-weight: 500;
-  color: var(--md-default-fg-color--light);
-  padding: 0;
-  margin: 0;
 }
 
 /* Collapsible sections */
