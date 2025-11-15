@@ -1,0 +1,77 @@
+site_name: KogamaLuaAPI Documentation
+site_description: Complete documentation for KogamaLuaAPI - Powerful Lua scripting mod for KoGaMa
+site_url: https://amuarte.github.io/kogama-lua-api/
+repo_url: https://github.com/amuarte/kogama-lua-api
+repo_name: amuarte/kogama-lua-api
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: light
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: dark
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Reference:
+    - Cubes:
+      - Overview: api-reference/cubes/index.md
+      - Properties: api-reference/cubes/properties.md
+    - Objects:
+      - Overview: api-reference/objects/index.md
+      - Text Properties: api-reference/objects/properties/text.md
+    - Camera: api-reference/camera.md
+    - File System: api-reference/filesystem.md
+    - Events: api-reference/events.md
+    - Storage: api-reference/storage.md
+  - Reference:
+    - Materials: reference/materials.md
+    - Object Types: reference/object-types.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/u6tKuP3k4M
+      name: Discord Server
+    - icon: fontawesome/brands/github
+      link: https://github.com/amuarte/kogama-lua-api
+      name: GitHub Repository
