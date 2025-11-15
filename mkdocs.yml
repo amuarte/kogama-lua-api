@@ -8,27 +8,35 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    - scheme: light
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
       primary: blue
-      accent: blue
+      accent: indigo
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dark
       primary: blue
-      accent: blue
+      accent: indigo
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-4
         name: Switch to light mode
+  logo: images/preview.png
+  favicon: images/preview.png
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
     - content.action.edit
+    - toc.follow
 
 markdown_extensions:
   - pymdownx.highlight:
