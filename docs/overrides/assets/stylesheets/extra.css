@@ -49,7 +49,15 @@ body {
 }
 
 .md-sidebar {
-  background-color: #0d0d0d !important;
+  background-color: #161616 !important;
+}
+
+.md-sidebar--primary {
+  background-color: #161616 !important;
+}
+
+.md-sidebar--secondary {
+  background-color: #161616 !important;
 }
 
 .md-search__form {
@@ -141,6 +149,32 @@ html {
 .md-typeset a {
   color: #ffffff !important;
   text-decoration: underline !important;
+}
+
+/* Sidebar and Table of Contents styling */
+.md-toc {
+  background-color: #161616 !important;
+}
+
+.md-nav {
+  background-color: #161616 !important;
+}
+
+.md-nav__list {
+  background-color: #161616 !important;
+}
+
+.md-nav__item {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.md-nav__link {
+  color: #e8e8e8 !important;
+}
+
+.md-nav__link:hover {
+  background-color: #1a1a1a !important;
 }
 
 /* Typography & Base Styles */
