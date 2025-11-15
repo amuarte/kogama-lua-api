@@ -1,13 +1,12 @@
-/* Professional IDE-style Documentation Theme */
+/* Professional Neutral Dark Documentation Theme */
 
 /* Typography & Base Styles */
 :root {
-  --primary-text: #e0e0e0;
-  --secondary-text: #a0a0a0;
-  --border-color: #3a3f47;
-  --code-bg: #1e1e1e;
-  --accent-blue: #569cd6;
-  --accent-green: #4ec9b0;
+  --primary-text: #e8e8e8;
+  --secondary-text: #a8a8a8;
+  --border-color: #313131;
+  --code-bg: #0d0d0d;
+  --bg-hover: #1a1a1a;
 }
 
 .md-typeset {
@@ -22,6 +21,7 @@
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 1rem;
+  color: #ffffff;
 }
 
 .md-typeset h2 {
@@ -29,7 +29,7 @@
   letter-spacing: -0.3px;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: var(--accent-blue);
+  color: #ffffff;
 }
 
 .md-typeset h3 {
@@ -37,6 +37,7 @@
   letter-spacing: -0.2px;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  color: #f0f0f0;
 }
 
 .md-typeset p {
@@ -51,7 +52,7 @@
   border-radius: 3px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.9em;
-  color: var(--accent-green);
+  color: #e8e8e8;
 }
 
 .md-typeset pre {
@@ -76,18 +77,18 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
 
 /* Admonitions & Tips */
 .md-typeset .admonition {
-  border-left: 3px solid var(--accent-blue);
-  background-color: rgba(86, 156, 214, 0.1);
+  border-left: 3px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.03);
   border-radius: 0;
   padding: 1rem;
 }
 
 .md-typeset .admonition.note {
-  border-left-color: var(--accent-blue);
+  border-left-color: #666666;
 }
 
 .md-typeset .admonition.tip {
-  border-left-color: var(--accent-green);
+  border-left-color: #666666;
 }
 
 /* Tables - Professional styling */
@@ -103,7 +104,7 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
 }
 
 .md-typeset table thead {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
   border-bottom: 2px solid var(--border-color);
 }
 
@@ -111,7 +112,7 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   padding: 1rem 0.75rem !important;
   font-weight: 600;
   text-align: left;
-  color: var(--accent-blue);
+  color: #ffffff;
 }
 
 .md-typeset table tbody tr {
@@ -120,7 +121,7 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
 }
 
 .md-typeset table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: var(--bg-hover);
 }
 
 .md-typeset table td {
@@ -152,7 +153,7 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   border-radius: 4px;
   padding: 0;
   margin: 1.5em 0;
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(255, 255, 255, 0.01);
 }
 
 .md-typeset details summary {
@@ -160,17 +161,17 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
   cursor: pointer;
   font-weight: 600;
   user-select: none;
-  color: var(--accent-blue);
+  color: #ffffff;
   transition: background-color 0.2s;
 }
 
 .md-typeset details summary:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-hover);
 }
 
 .md-typeset details[open] summary {
   border-bottom: 1px solid var(--border-color);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-hover);
 }
 
 .md-typeset details > *:not(summary) {
