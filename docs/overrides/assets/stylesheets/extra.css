@@ -1,9 +1,17 @@
 /* Improved dark mode and table styling */
 
-/* Dark mode - ensure proper contrast */
+/* Force dark mode colors */
 [data-md-color-scheme="dark"] {
-  --md-text-color: rgba(255, 255, 255, 0.87);
-  --md-code-bg-color: rgba(0, 0, 0, 0.26);
+  color-scheme: dark;
+  --md-default-fg-color: #eceff1;
+  --md-default-bg-color: #212121;
+  --md-code-bg-color: #37474f;
+  --md-code-fg-color: #eceff1;
+  --md-border-color: #37474f;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark !important;
 }
 
 /* Better table styling for materials and objects */
