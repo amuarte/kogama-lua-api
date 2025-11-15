@@ -50,7 +50,7 @@
 .material-info, .object-info {
   text-align: left;
   font-size: 0.75rem;
-  width: 100%;
+  flex: 1;
   word-break: break-word;
   display: flex;
   flex-direction: row;
