@@ -15,6 +15,8 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 
 ---
 
+## Pickups
+
 | Icon | Name | ID |
 |------|------|-----|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/55/T_Bazooka_Default_Icon.png" width="32" height="32">|`BAZOOKA`|10355|
@@ -44,6 +46,11 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/a/a8/T_CrystalVein_Default_Icon.png" width="32" height="32">|`CRYSTAL_VEIN`|8880187|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/54/T_Costume_Default_Icon.png" width="32" height="32">|`COSTUME`|12496365|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/95/T_Custom_Gun_Default_Icon.png" width="32" height="32">|`CUSTOM_GUN`|12730220|
+
+## Blueprints
+
+| Icon | Name | ID |
+|------|------|-----|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/0e/T_Teleporter_Default_Icon.png" width="32" height="32">|`TELEPORTER`|13481|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/80/T_Platform_Default_Icon.png" width="32" height="32">|`PLATFORM`|19674|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/9/9b/T_VerticalRotator_Default_Icon.png" width="32" height="32">|`VERTICAL_ROTATOR`|20757|
@@ -62,6 +69,11 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/7/79/T_Door_Default_Icon.png" width="32" height="32">|`DOOR`|12305637|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/5/57/T_SlidingDoor_Default_Icon.png" width="32" height="32">|`SLIDING_DOOR`|12324723|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/8/8f/T_TrapDoor_Default_Icon.png" width="32" height="32">|`TRAP_DOOR`|12339395|
+
+## Logic
+
+| Icon | Name | ID |
+|------|------|-----|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/64/T_RoundTime_Default_Icon.png" width="32" height="32">|`ROUND_TIME`|91196|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/2b/T_WaterCube_Default_Icon.png" width="32" height="32">|`WATER_CUBE`|10377|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e7/T_SmokeCube_Default_Icon.png" width="32" height="32">|`SMOKE_CUBE`|10373|
@@ -84,6 +96,11 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 |<img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/yellow_team_spawn_point.png" width="32" height="32">|`YELLOW_TEAM_SPAWN_POINT`|10364|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/6/67/T_BlueTeamSpawnPoint_Default_Icon.png" width="32" height="32">|`BLUE_TEAM_SPAWN_POINT`|10361|
 |<img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/green_team_spawn_point.png" width="32" height="32">|`GREEN_TEAM_SPAWN_POINT`|10363|
+
+## Advanced Logic
+
+| Icon | Name | ID |
+|------|------|-----|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/4/4a/T_TargetCube_Default_Icon.png" width="32" height="32">|`TARGET_CUBE`|4113945|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/2/22/T_CountingCube_Default_Icon.png" width="32" height="32">|`COUNTING_CUBE`|5435011|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/0/02/T_DelayCube_Default_Icon.png" width="32" height="32">|`DELAY_CUBE`|10366|
@@ -97,5 +114,10 @@ Based on [Kogama Wiki - Tools](https://kogama.fandom.com/wiki/Tools).
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fb/T_RandomCube_Default_Icon.png" width="32" height="32">|`RANDOM_CUBE`|10379|
 |<img src="https://raw.githubusercontent.com/amuarte/kogama-lua-api/dev-0.3/docs/images/lever.png" width="32" height="32">|`LEVER`|4113944|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/f/fc/T_PressurePlate_Default_Icon.png" width="32" height="32">|`PRESSURE_PLATE`|10370|
+
+## Special
+
+| Icon | Name | ID |
+|------|------|-----|
 |<img src="https://static.wikia.nocookie.net/kogama_gamepedia_en/images/e/e8/T_LightConcrete_Default_Icon.png" width="32" height="32">|`MODEL`|75579|
 | |`GROUP`|10348|
