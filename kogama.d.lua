@@ -2,6 +2,8 @@
 --- Complete type definitions for KogamaLuaAPI Lua scripting
 --- Copy this file to your project for IDE autocomplete support
 
+---@diagnostic disable:undefined-doc-name,lowercase-global
+
 ---@class Cube
 ---@field position table Position as {x, y, z}
 ---@field materials table[] Material IDs for each face (1-6)
@@ -156,7 +158,6 @@ function new_object(type) end
 --- Links an object's output to another object's input
 ---@param obj1 Object Source object
 ---@param obj2 Object Target object
----@return void
 function link(obj1, obj2) end
 
 --- Loads and executes a Lua script from the scripts folder
@@ -175,17 +176,15 @@ function read_file(filename) end
 function read_image(filename) end
 
 --- Registers a callback for when a cube is removed
----@param callback fun(cube: Cube): void Function called with removed cube
----@return void
+---@param callback fun(cube: Cube)
 function on_cube_removed(callback) end
 
 --- Registers a callback for when a command is entered
 ---@param command string Command name to listen for
----@param callback fun(args: string[]): void Function called with command arguments
----@return void
+---@param callback fun(args: string[])
 function on_command(command, callback) end
 
 --- Prints text to the game chat
 ---@param message string Message to print
----@return void
 function print(message) end
+
