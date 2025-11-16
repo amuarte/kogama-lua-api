@@ -1,22 +1,20 @@
-/* Professional Neutral Dark Documentation Theme */
+/* Hard Technical Dark Theme - Code Editor Style */
 
-/* Material Theme Overrides - Force Neutral Colors with !important */
 :root {
   --md-primary-fg-color: #ffffff !important;
   --md-primary-bg-color: #0d0d0d !important;
   --md-accent-fg-color: #ffffff !important;
   --md-accent-bg-color: #1a1a1a !important;
   --md-default-bg-color: #0d0d0d !important;
-  --md-default-fg-color: #e8e8e8 !important;
+  --md-default-fg-color: #d4d4d4 !important;
   --md-code-bg-color: #0a0a0a !important;
-  --md-code-fg-color: #e8e8e8 !important;
-  --md-border-color: #313131 !important;
-  --md-shadow-z1: 0 0 0 rgba(0, 0, 0, 0) !important;
-  --md-shadow-z2: 0 0 0 rgba(0, 0, 0, 0) !important;
-  --md-shadow-z3: 0 0 0 rgba(0, 0, 0, 0) !important;
+  --md-code-fg-color: #d4d4d4 !important;
+  --md-border-color: #262626 !important;
+  --md-shadow-z1: none !important;
+  --md-shadow-z2: none !important;
+  --md-shadow-z3: none !important;
 }
 
-/* Force neutral background on all elements */
 html {
   background-color: #0d0d0d !important;
 }
@@ -27,12 +25,13 @@ body {
 
 .md-header {
   background-color: #0f0f0f !important;
-  border-bottom-color: #313131 !important;
+  border-bottom: 1px solid #262626 !important;
+  box-shadow: none !important;
 }
 
 .md-tabs {
   background-color: #0f0f0f !important;
-  border-bottom-color: #313131 !important;
+  border-bottom: 1px solid #262626 !important;
 }
 
 .md-nav {
@@ -45,30 +44,27 @@ body {
 
 .md-footer {
   background-color: #0f0f0f !important;
-  border-top-color: #313131 !important;
+  border-top: 1px solid #262626 !important;
 }
 
 .md-sidebar {
-  background-color: #161616 !important;
+  background-color: #121212 !important;
+  border-right: 1px solid #262626 !important;
 }
 
 .md-sidebar--primary {
-  background-color: #161616 !important;
+  background-color: #121212 !important;
+  border-right: 1px solid #262626 !important;
 }
 
 .md-sidebar--secondary {
-  background-color: #161616 !important;
+  background-color: #121212 !important;
+  border-left: 1px solid #262626 !important;
 }
 
 .md-search__form {
   background-color: #1a1a1a !important;
-}
-
-/* Additional overrides for Material theme elements */
-.md-nav__item,
-.md-nav__link,
-.md-nav__title {
-  background-color: transparent !important;
+  border: 1px solid #262626 !important;
 }
 
 .md-nav__item--active > .md-nav__link {
@@ -77,13 +73,13 @@ body {
 }
 
 .md-tabs__link {
-  color: #ffffff !important;
+  color: #d4d4d4 !important;
   background-color: transparent !important;
 }
 
 .md-tabs__link--active {
   color: #ffffff !important;
-  border-bottom-color: #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
 }
 
 .md-header__inner {
@@ -91,29 +87,18 @@ body {
 }
 
 .md-header__button {
-  color: #ffffff !important;
+  color: #d4d4d4 !important;
 }
 
 .md-search__input {
   background-color: transparent !important;
-  color: #e8e8e8 !important;
+  color: #d4d4d4 !important;
 }
 
 .md-search__input::placeholder {
-  color: #a8a8a8 !important;
+  color: #808080 !important;
 }
 
-/* Remove all Material theme color tints */
-[data-md-color-scheme="slate"] {
-  color-scheme: dark !important;
-}
-
-[data-md-color-scheme="slate"] * {
-  background-color: transparent !important;
-  border-color: #313131 !important;
-}
-
-/* Force specific elements */
 .md-main {
   background-color: #0d0d0d !important;
 }
@@ -130,174 +115,147 @@ body {
   background-color: transparent !important;
 }
 
-/* Remove Material theme gradients and shadows */
-body {
-  background: #0d0d0d !important;
-}
-
-html {
-  background: #0d0d0d !important;
-}
-
-/* Button styles */
-.md-button {
-  color: #ffffff !important;
-  border-color: #313131 !important;
-}
-
-/* Link colors */
-.md-typeset a {
-  color: #ffffff !important;
-  text-decoration: underline !important;
-}
-
-/* Sidebar and Table of Contents styling */
-.md-toc {
-  background-color: #161616 !important;
-}
-
-.md-nav {
-  background-color: #161616 !important;
-}
-
-.md-nav__list {
-  background-color: #161616 !important;
-}
-
-.md-nav__item {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-
-.md-nav__link {
-  color: #e8e8e8 !important;
-}
-
-.md-nav__link:hover {
-  background-color: #1a1a1a !important;
-}
-
-/* Typography & Base Styles */
+/* Typography - Hard and Technical */
 .md-typeset {
-  line-height: 1.6;
-  letter-spacing: 0.3px;
-  color: #e8e8e8;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #d4d4d4;
+  font-family: Courier New, monospace;
 }
 
 .md-typeset h1 {
-  font-weight: 600;
-  letter-spacing: -0.5px;
+  font-weight: 700;
+  letter-spacing: 0;
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #262626;
+  padding-bottom: 0.75rem;
   color: #ffffff;
+  font-size: 1.8em;
+  font-family: Courier New, monospace;
 }
 
 .md-typeset h2 {
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
   color: #ffffff;
+  font-size: 1.4em;
+  font-family: Courier New, monospace;
+  border-left: 3px solid #262626;
+  padding-left: 0.75rem;
 }
 
 .md-typeset h3 {
-  font-weight: 500;
-  letter-spacing: -0.2px;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #f0f0f0;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+  font-size: 1.1em;
+  font-family: Courier New, monospace;
 }
 
 .md-typeset p {
-  margin-bottom: 1rem;
-  color: var(--primary-text);
+  margin-bottom: 0.8rem;
+  color: #d4d4d4;
 }
 
-/* Code blocks & inline code */
+/* Code - Consistent monospace */
 .md-typeset code {
-  background-color: var(--code-bg);
+  background-color: #0a0a0a;
   padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
+  border-radius: 0;
+  border: 1px solid #262626;
+  font-family: Consolas, monospace;
   font-size: 0.9em;
-  color: #e8e8e8;
+  color: #d4d4d4;
 }
 
 .md-typeset pre {
-  background-color: var(--code-bg) !important;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  padding: 1.2rem !important;
-  line-height: 1.5;
+  background-color: #0a0a0a !important;
+  border: 1px solid #262626;
+  border-radius: 0;
+  padding: 1rem !important;
+  line-height: 1.4;
+  margin: 1rem 0;
+  overflow-x: auto;
 }
 
 .md-typeset pre code {
   background-color: transparent;
   padding: 0;
   color: inherit;
+  border: none;
+  font-family: Consolas, monospace;
 }
 
-/* Pixelated images for icon rendering */
-img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-/* Admonitions & Tips */
+/* Admonitions */
 .md-typeset .admonition {
-  border-left: 3px solid var(--border-color);
-  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid #262626;
+  background-color: #0a0a0a;
   border-radius: 0;
   padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #262626;
 }
 
 .md-typeset .admonition.note {
-  border-left-color: #666666;
+  border-left-color: #404040;
 }
 
 .md-typeset .admonition.tip {
-  border-left-color: #666666;
+  border-left-color: #404040;
 }
 
-/* Tables - Professional styling */
+/* Tables - Hard Technical Style */
 .md-typeset table {
   font-size: 0.9rem;
-  margin: 1.5em 0;
+  margin: 1rem 0;
   overflow-x: auto;
   display: block;
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border: 1px solid #262626;
+  border-radius: 0;
+  font-family: Consolas, monospace;
 }
 
 .md-typeset table thead {
-  background-color: rgba(255, 255, 255, 0.03);
-  border-bottom: 2px solid var(--border-color);
+  background-color: #0a0a0a;
+  border-bottom: 2px solid #262626;
 }
 
 .md-typeset table thead th {
-  padding: 1rem 0.75rem !important;
-  font-weight: 600;
+  padding: 0.75rem !important;
+  font-weight: 700;
   text-align: left;
   color: #ffffff;
+  border-right: 1px solid #262626;
+}
+
+.md-typeset table thead th:last-child {
+  border-right: none;
 }
 
 .md-typeset table tbody tr {
-  border-bottom: 1px solid var(--border-color);
-  transition: background-color 0.2s;
+  border-bottom: 1px solid #262626;
 }
 
 .md-typeset table tbody tr:hover {
-  background-color: var(--bg-hover);
+  background-color: #0f0f0f;
 }
 
 .md-typeset table td {
-  padding: 0.9rem 0.75rem !important;
-  vertical-align: middle;
-  color: var(--primary-text);
+  padding: 0.75rem !important;
+  vertical-align: top;
+  color: #d4d4d4;
+  border-right: 1px solid #262626;
+}
+
+.md-typeset table td:last-child {
+  border-right: none;
 }
 
 .md-typeset table img {
@@ -310,110 +268,93 @@ img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
 
 /* Lists */
 .md-typeset ul {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  margin-left: 1.5rem;
 }
 
 .md-typeset li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Links */
+.md-typeset a {
+  color: #b0d4ff;
+  text-decoration: none;
+  border-bottom: 1px solid #b0d4ff;
+}
+
+.md-typeset a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 /* Collapsible sections */
 .md-typeset details {
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border: 1px solid #262626;
+  border-radius: 0;
   padding: 0;
-  margin: 1.5em 0;
-  background-color: rgba(255, 255, 255, 0.01);
+  margin: 1rem 0;
+  background-color: #0a0a0a;
 }
 
 .md-typeset details summary {
-  padding: 1rem;
+  padding: 0.75rem;
   cursor: pointer;
   font-weight: 600;
   user-select: none;
   color: #ffffff;
-  transition: background-color 0.2s;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid transparent;
+  font-family: Courier New, monospace;
 }
 
 .md-typeset details summary:hover {
-  background-color: var(--bg-hover);
+  background-color: #0f0f0f;
 }
 
 .md-typeset details[open] summary {
-  border-bottom: 1px solid var(--border-color);
-  background-color: var(--bg-hover);
+  border-bottom: 1px solid #262626;
 }
 
 .md-typeset details > *:not(summary) {
-  padding: 0 1rem;
+  padding: 0.75rem;
 }
 
-.md-typeset details > div:first-of-type {
-  padding-top: 1rem;
+/* Image rendering */
+img[src*="Default_Icon"], img[src*="gigantic_eye"], img[src*="spawn_point"] {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
-.md-typeset details > div:last-of-type {
-  padding-bottom: 1rem;
-}
-
-/* Responsive Grid */
+/* Responsive Design */
 @media (max-width: 1200px) {
-  .material-grid, .object-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+  .md-typeset h1 {
+    font-size: 1.6em;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.3em;
   }
 }
 
 @media (max-width: 768px) {
-  .material-grid, .object-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 8px;
-  }
-
-  .material-card, .object-card {
-    padding: 8px;
-    gap: 8px;
-  }
-
-  .material-preview, .object-preview {
-    width: 36px;
-    height: 36px;
-  }
-
-  .material-info, .object-info {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .material-grid, .object-grid {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-
-  .material-card, .object-card {
-    padding: 8px;
-    gap: 8px;
-  }
-
-  .material-preview, .object-preview {
-    width: 36px;
-    height: 36px;
-  }
-
-  .material-info, .object-info {
-    font-size: 0.65rem;
+  .md-typeset {
+    font-size: 0.95rem;
   }
 
   .md-typeset table {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .md-typeset table td {
     padding: 0.5rem !important;
   }
 
-  .md-typeset table img {
-    max-height: 28px;
+  .md-typeset h1 {
+    font-size: 1.4em;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.1em;
   }
 }

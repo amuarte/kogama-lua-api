@@ -7,9 +7,36 @@ repo_name: amuarte/kogama-lua-api
 edit_uri: edit/main/docs/
 
 theme:
-  name: readthedocs
-  analytics:
-    gtag: null
+  name: material
+  palette:
+    - scheme: slate
+      primary: slate
+      accent: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: slate
+      accent: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  font:
+    text: Courier New
+    code: Consolas
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - toc.follow
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -25,8 +52,8 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# extra_css:
-#   - assets/stylesheets/extra.css
+extra_css:
+  - assets/stylesheets/extra.css
 
 plugins:
   - search
