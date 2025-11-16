@@ -14,6 +14,22 @@ Your scripts go in:
 
 The folder auto-creates on first run. You can create subfolders to organize your scripts.
 
+### IDE Support (Optional)
+
+For autocomplete and type hints in VS Code and other IDEs:
+
+1. Download `kogama.d.lua` from [GitHub releases](https://github.com/amuarte/kogama-lua-api/releases)
+2. Copy it to your project folder
+3. Restart your IDE
+
+You'll now get autocomplete for:
+- All functions (`new_cube()`, `get_cube()`, `new_object()`, etc.)
+- All classes (Cube, Object, Image, etc.)
+- All constants (OBJECTS enum with 80+ objects)
+- Property suggestions and type hints
+
+**Tip:** Use [Lua Language Server](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) VS Code extension for full type checking.
+
 ## Loading Scripts
 
 In-game chat, type:
