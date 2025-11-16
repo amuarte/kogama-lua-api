@@ -3,7 +3,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.4.0--alpha-blue)](https://github.com/amuarte/kogama-lua-api/releases)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)](docs/index.md)
+[![Status](https://img.shields.io/badge/status-Early%20Alpha-orange)](https://amuarte.github.io/kogama-lua-api/)
 
 ![KogamaLuaAPI Preview](docs/images/preview.png)
 
@@ -85,7 +85,7 @@ In-game type: `/loadscript test`
 
 ## Documentation
 
-→ **[Full Documentation](docs/index.md)** — Complete API reference
+→ **[Full Documentation](https://amuarte.github.io/kogama-lua-api/)** — Complete API reference
 
 ---
 
