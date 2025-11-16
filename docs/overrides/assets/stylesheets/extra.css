@@ -48,17 +48,17 @@ body {
 }
 
 .md-sidebar {
-  background-color: #121212 !important;
+  background-color: #171717 !important;
   border-right: 1px solid #262626 !important;
 }
 
 .md-sidebar--primary {
-  background-color: #121212 !important;
+  background-color: #171717 !important;
   border-right: 1px solid #262626 !important;
 }
 
 .md-sidebar--secondary {
-  background-color: #121212 !important;
+  background-color: #171717 !important;
   border-left: 1px solid #262626 !important;
 }
 
