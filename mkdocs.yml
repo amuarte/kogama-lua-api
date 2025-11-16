@@ -22,8 +22,8 @@ theme:
         icon: material/brightness-4
         name: Switch to dark mode
   font:
-    text: Courier New
-    code: Consolas
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tracking
