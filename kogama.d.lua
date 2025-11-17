@@ -2,7 +2,7 @@
 --- Complete type definitions for KogamaLuaAPI Lua scripting
 --- Copy this file to your project for IDE autocomplete support
 
----@diagnostic disable:undefined-doc-name,lowercase-global
+---@diagnostic disable:undefined-doc-name,lowercase-global,missing-return
 
 ---@class Cube
 ---@field position table Position as {x, y, z}
@@ -14,7 +14,6 @@
 local Cube = {}
 
 --- Spawn the cube in the world
----@return void
 function Cube:spawn() end
 
 --- Remove the cube from the world
@@ -30,7 +29,6 @@ function Cube:remove() end
 local Object = {}
 
 --- Spawn the object in the world
----@return void
 function Object:spawn() end
 
 --- Remove the object from the world
